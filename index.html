@@ -252,7 +252,7 @@ HERO SOLO IMAGEN
 .hero{
     width:100%;
     height:100vh;
-    margin-top:70px; /* altura del menú */
+    margin-top:70px;
     overflow:hidden;
     background:#fff;
     padding:0;
@@ -282,6 +282,51 @@ HERO SOLO IMAGEN
     max-width:none;
     filter:none;
     animation:none;
+}
+
+/* ==========================
+TABLETS
+========================== */
+
+@media (max-width: 992px){
+
+    .hero{
+        height:85vh;
+    }
+
+}
+
+/* ==========================
+CELULARES
+========================== */
+
+@media (max-width: 768px){
+
+    .hero{
+        height:950px;
+        margin-top:70px;
+    }
+
+    .hero-image{
+        height:100%;
+    }
+
+    .hero-image img{
+        width:100%;
+        height:100%;
+        object-fit:contain;
+        object-position:top center;
+    }
+
+}
+
+/* ==========================
+CELULARES PEQUEÑOS
+========================== */
+@media (max-width:768px){
+    .hero{
+        height:1200px;
+    }
 }
 /* BOTÓN WHATSAPP MEJORADO */
 
@@ -349,7 +394,7 @@ HERO SOLO IMAGEN
                 <img src="assets/img/logo8796.jpg" alt="Bienestar en el Hogar">
 
                 <div class="logo-text">
-                    Bienestar en el Hogar
+
                 </div>
 
             </div>
@@ -430,157 +475,200 @@ HERO SOLO IMAGEN
 SERVICIOS
 ===================================== -->
 
+<section class="services" id="servicios">
+
+<div class="container">
+
+<div class="section-title">
+
+<span>NUESTROS SERVICIOS</span>
+
+<h2>Servicios Médicos Domiciliarios Integrales</h2>
+
+<p>
+En Bienestar en el Hogar ofrecemos atención médica domiciliaria integral con altos estándares de calidad,
+humanización y seguridad. Nuestro equipo de profesionales está comprometido con el bienestar de cada
+paciente, brindando servicios de promoción, prevención, diagnóstico, tratamiento y rehabilitación en la
+comodidad de su hogar. Atendemos niños, adultos y adultos mayores con una atención personalizada,
+oportuna y centrada en las necesidades de cada familia.
+</p>
+
+</div>
+
+<div class="services-grid">
+
 <!-- MEDICINA GENERAL -->
 
 <a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-user-doctor"></i>
-        </div>
-        <h3>Medicina General</h3>
-        <p>Consulta médica domiciliaria para niños, adultos y adultos mayores.</p>
-    </div>
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/medicina_general3.jpg" alt="Medicina General">
+</div>
+<h3>Medicina General</h3>
+<p>Consulta médica domiciliaria para niños, adultos y adultos mayores.</p>
+</div>
 </a>
 
-<a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-heart-pulse"></i>
-        </div>
-        <h3>Enfermería Profesional</h3>
-        <p>Aplicación de medicamentos, curaciones y cuidados especializados.</p>
-    </div>
-</a>
+<!-- ENFERMERIA -->
 
 <a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-lungs"></i>
-        </div>
-        <h3>Terapia Respiratoria</h3>
-        <p>Nebulizaciones, higiene bronquial y manejo respiratorio.</p>
-    </div>
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/laboratorio.png" alt="Enfermería">
+</div>
+<h3>Enfermería Profesional</h3>
+<p>Aplicación de medicamentos, curaciones y cuidados especializados.</p>
+</div>
 </a>
 
-<a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-person-walking"></i>
-        </div>
-        <h3>Terapia Física</h3>
-        <p>Rehabilitación física y recuperación funcional.</p>
-    </div>
-</a>
+<!-- TERAPIA RESPIRATORIA -->
 
 <a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-brain"></i>
-        </div>
-        <h3>Psicología</h3>
-        <p>Apoyo emocional y atención psicológica profesional.</p>
-    </div>
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/IMG6.JPG" alt="Terapia Respiratoria">
+</div>
+<h3>Terapia Respiratoria</h3>
+<p>Nebulizaciones, higiene bronquial y manejo respiratorio.</p>
+</div>
 </a>
 
-<a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-video"></i>
-        </div>
-        <h3>Teleconsulta</h3>
-        <p>Consulta médica virtual desde cualquier lugar.</p>
-    </div>
-</a>
+<!-- TERAPIA FISICA -->
 
 <a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-ear-listen"></i>
-        </div>
-        <h3>Lavado de Oídos</h3>
-        <p>Extracción segura de cerumen por personal capacitado.</p>
-    </div>
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/IMG3.JPG" alt="Terapia Física">
+</div>
+<h3>Terapia Física</h3>
+<p>Rehabilitación física y recuperación funcional.</p>
+</div>
 </a>
 
-<a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-bandage"></i>
-        </div>
-        <h3>Curaciones y Suturas</h3>
-        <p>Manejo de heridas, retiro de puntos y curaciones.</p>
-    </div>
-</a>
+
+<!-- TELECONSULTA -->
 
 <a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-droplet"></i>
-        </div>
-        <h3>Suero Terapéutico</h3>
-        <p>Hidratación intravenosa y recuperación del estado general.</p>
-    </div>
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/medico2.webp" alt="Teleconsulta">
+</div>
+<h3>Teleconsulta</h3>
+<p>Consulta médica virtual desde cualquier lugar.</p>
+</div>
 </a>
 
-<a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-syringe"></i>
-        </div>
-        <h3>Procedimientos Médicos</h3>
-        <p>Inyectología, medicamentos intravenosos y procedimientos básicos.</p>
-    </div>
-</a>
+<!-- LAVADO DE OIDOS -->
 
 <a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-heartbeat"></i>
-        </div>
-        <h3>Control de Enfermedades Crónicas</h3>
-        <p>Seguimiento de hipertensión, diabetes y enfermedades cardíacas.</p>
-    </div>
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/laboratorio.webp" alt="Lavado de Oídos">
+</div>
+<h3>Lavado de Oídos</h3>
+<p>Extracción segura de cerumen por personal capacitado.</p>
+</div>
 </a>
 
-<a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-wave-square"></i>
-        </div>
-        <h3>Ecografías a Domicilio</h3>
-        <p>Estudios diagnósticos realizados en la comodidad del hogar.</p>
-    </div>
-</a>
+<!-- CURACIONES -->
 
 <a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-vial"></i>
-        </div>
-        <h3>Toma de Muestras</h3>
-        <p>Laboratorios clínicos y exámenes diagnósticos en casa.</p>
-    </div>
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/curacion.webp" alt="Curaciones">
+</div>
+<h3>Curaciones y Suturas</h3>
+<p>Manejo de heridas, retiro de puntos y curaciones.</p>
+</div>
 </a>
 
-<a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-hands-holding-heart"></i>
-        </div>
-        <h3>Cuidados Paliativos</h3>
-        <p>Acompañamiento integral para pacientes con enfermedades avanzadas.</p>
-    </div>
-</a>
+<!-- SUERO -->
 
 <a href="servicios.html" class="service-link">
-    <div class="service-card">
-        <div class="service-icon">
-            <i class="fas fa-person-cane"></i>
-        </div>
-        <h3>Cuidado del Adulto Mayor</h3>
-        <p>Atención integral para mejorar calidad de vida y bienestar.</p>
-    </div>
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/SUEROS1.jpg" alt="Suero Terapéutico">
+</div>
+<h3>Suero Terapéutico</h3>
+<p>Hidratación intravenosa y recuperación del estado general.</p>
+</div>
 </a>
+
+<!-- PROCEDIMIENTOS -->
+
+<a href="servicios.html" class="service-link">
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/medicina_general3.jpg" alt="Procedimientos">
+</div>
+<h3>Procedimientos Médicos</h3>
+<p>Inyectología, medicamentos intravenosos y procedimientos básicos.</p>
+</div>
+</a>
+
+<!-- CRONICAS -->
+
+<a href="servicios.html" class="service-link">
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/IMG9.JPG" alt="Enfermedades Crónicas">
+</div>
+<h3>Control de Enfermedades Crónicas</h3>
+<p>Seguimiento de hipertensión, diabetes y enfermedades cardíacas.</p>
+</div>
+</a>
+
+<!-- ECOGRAFIAS -->
+
+<a href="servicios.html" class="service-link">
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/ecografia.jpg" alt="Ecografías">
+</div>
+<h3>Ecografías a Domicilio</h3>
+<p>Estudios diagnósticos realizados en la comodidad del hogar.</p>
+</div>
+</a>
+
+<!-- MUESTRAS -->
+
+<a href="servicios.html" class="service-link">
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/laboratorio.jpg" alt="Toma de Muestras">
+</div>
+<h3>Toma de Muestras</h3>
+<p>Laboratorios clínicos y exámenes diagnósticos en casa.</p>
+</div>
+</a>
+
+<!-- PALIATIVOS -->
+
+<a href="servicios.html" class="service-link">
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/cuidados paliativos.jpeg" alt="Cuidados Paliativos">
+</div>
+<h3>Cuidados Paliativos</h3>
+<p>Acompañamiento integral para pacientes con enfermedades avanzadas.</p>
+</div>
+</a>
+
+<!-- ADULTO MAYOR -->
+
+<a href="servicios.html" class="service-link">
+<div class="service-card">
+<div class="service-image">
+<img src="assets/img/cuidados paliativos.jpg" alt="Adulto Mayor">
+</div>
+<h3>Cuidado del Adulto Mayor</h3>
+<p>Atención integral para mejorar calidad de vida y bienestar.</p>
+</div>
+</a>
+
+</div>
+
+</div>
 
 </section>
 
@@ -591,174 +679,116 @@ SERVICIOS
 ===================================== */
 
 .services{
-
 padding:100px 0;
-
 background:#ffffff;
-
 }
 
 .section-title{
-
+max-width:950px;
+margin:auto;
 text-align:center;
-
-margin-bottom:60px;
-
+margin-bottom:70px;
 }
 
 .section-title span{
-
 color:var(--secondary);
-
 font-weight:700;
-
 letter-spacing:2px;
-
 }
 
 .section-title h2{
-
-font-size:2.7rem;
-
+font-size:2.8rem;
 margin-top:10px;
-
+margin-bottom:20px;
 color:var(--primary);
-
 }
 
 .section-title p{
-
-margin-top:15px;
-
-color:#64748B;
-
 font-size:1.1rem;
-
+line-height:1.9;
+color:#64748B;
 }
 
 .services-grid{
-
 display:grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(280px,1fr));
-
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 gap:30px;
-
 }
 
 .service-card{
-
-background:white;
-
+background:#fff;
 border-radius:25px;
-
 padding:35px;
-
 text-align:center;
-
-box-shadow:0 10px 25px rgba(0,0,0,.08);
-
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 transition:.4s;
-
+height:100%;
 }
 
 .service-card:hover{
-
 transform:translateY(-10px);
-
+box-shadow:0 20px 40px rgba(0,0,0,.12);
 }
 
-.service-icon{
-
-width:90px;
-
-height:90px;
-
+.service-image{
+width:130px;
+height:130px;
 margin:auto;
-
-background:
-linear-gradient(
-135deg,
-var(--primary),
-var(--secondary)
-);
-
-border-radius:50%;
-
-display:flex;
-
-align-items:center;
-
-justify-content:center;
-
 margin-bottom:25px;
-
+border-radius:50%;
+overflow:hidden;
+border:5px solid #f1f5f9;
+box-shadow:0 10px 25px rgba(0,0,0,.15);
+transition:.4s;
 }
 
-.service-icon i{
+.service-image img{
+width:100%;
+height:100%;
+object-fit:cover;
+display:block;
+}
 
-font-size:35px;
-
-color:white;
-
+.service-card:hover .service-image{
+transform:scale(1.08);
 }
 
 .service-card h3{
-
 margin-bottom:15px;
-
 color:var(--primary);
-
+font-size:1.3rem;
 }
 
 .service-card p{
-
 color:#64748B;
-
 line-height:1.7;
-
-margin-bottom:25px;
-
 }
 
-.service-card a{
-
-display:inline-block;
-
-background:var(--secondary);
-
-color:white;
-
-padding:12px 25px;
-
-border-radius:30px;
-
+.service-link{
 text-decoration:none;
-
-font-weight:600;
-
-}
-
-    .service-icon{
-    width:110px;
-    height:110px;
-}
-
-.service-icon i{
-    font-size:48px;
-    color:#fff;
-}
-    .service-link{
-    text-decoration:none;
-    color:inherit;
-    display:block;
+color:inherit;
+display:block;
 }
 
 .service-link:hover{
-    text-decoration:none;
+text-decoration:none;
 }
+
+@media(max-width:768px){
+
+.section-title h2{
+font-size:2rem;
+}
+
+.service-image{
+width:110px;
+height:110px;
+}
+
+}
+
 </style>
+
 
 <!-- =====================================
 COMO FUNCIONA
