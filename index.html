@@ -251,7 +251,7 @@ HERO SOLO IMAGEN
 
 .hero{
     width:100%;
-    height:100vh;
+    min-height:100vh;
     margin-top:70px;
     overflow:hidden;
     background:#fff;
@@ -270,16 +270,14 @@ HERO SOLO IMAGEN
 
 .hero-image{
     width:100%;
-    height:100%;
     display:block;
 }
 
 .hero-image img{
     width:100%;
-    height:100%;
-    object-fit:cover;
+    height:auto;
     display:block;
-    max-width:none;
+    max-width:100%;
     filter:none;
     animation:none;
 }
@@ -288,10 +286,15 @@ HERO SOLO IMAGEN
 TABLETS
 ========================== */
 
-@media (max-width: 992px){
+@media (max-width:992px){
 
     .hero{
-        height:85vh;
+        min-height:auto;
+    }
+
+    .hero-image img{
+        width:100%;
+        height:auto;
     }
 
 }
@@ -300,34 +303,30 @@ TABLETS
 CELULARES
 ========================== */
 
-@media (max-width: 768px){
+@media (max-width:768px){
 
     .hero{
-        height:950px;
+        min-height:auto;
         margin-top:70px;
     }
 
+    .hero-content{
+        height:auto;
+    }
+
     .hero-image{
-        height:100%;
+        width:100%;
+        height:auto;
     }
 
     .hero-image img{
         width:100%;
-        height:100%;
-        object-fit:contain;
-        object-position:top center;
+        height:auto;
+        display:block;
     }
 
 }
 
-/* ==========================
-CELULARES PEQUEÑOS
-========================== */
-@media (max-width:768px){
-    .hero{
-        height:1200px;
-    }
-}
 /* BOTÓN WHATSAPP MEJORADO */
 
 .whatsapp-float{
@@ -361,20 +360,6 @@ CELULARES PEQUEÑOS
         bottom:15px;
         right:15px;
         font-size:28px;
-    }
-
-}
-@media(max-width:768px){
-
-    .hero{
-        height:auto;
-        margin-top:70px;
-    }
-
-    .hero-image img{
-        width:100%;
-        height:auto;
-        object-fit:contain;
     }
 
 }
@@ -461,7 +446,7 @@ CELULARES PEQUEÑOS
             <!-- IMAGEN -->
             <div class="hero-image">
 
-                <img src="assets/img/portada524.png"
+                <img src="assets/img/bienestar3.png"
                      alt="Bienestar en el Hogar">
 
             </div>
