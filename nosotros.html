@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienestar en el Hogar</title>
+
+    <!-- Logo de la pestaña -->
+    <link rel="icon" type="image/png" href="assets/img/logo8796.jpg">
+<title>Bienestar en el Hogar | Atención Médica Domiciliaria en Bogotá</title>
+
+<meta name="description"
+content="Médicos, enfermería, terapias y atención domiciliaria profesional en Bogotá. Servicio rápido, seguro y humanizado en la comodidad de tu hogar.">
+
+<meta name="keywords"
+content="médico a domicilio Bogotá, enfermería domiciliaria, terapia respiratoria, atención médica en casa, consulta médica domicilio">
+
+<meta name="author" content="Bienestar en el Hogar">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<meta property="og:title" content="Bienestar en el Hogar | Atención Médica Domiciliaria en Bogotá">
+
+<meta property="og:description"
+content="Médicos, enfermería, terapias y atención domiciliaria profesional en Bogotá.">
+
+<meta property="og:type" content="website">
+
+<meta property="og:image"
+content="https://www.bienestarentuhogar.com/assets/img/portada524.png">
+
+<meta property="og:url"
+content="https://www.bienestarentuhogar.com">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical"
+href="https://www.bienestarentuhogar.com">
+
+<!-- Datos estructurados SEO Local -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalClinic",
+  "name": "Bienestar en el Hogar",
+  "url": "https://www.bienestarentuhogar.com",
+  "telephone": "+573159245776",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Bogotá",
+    "addressRegion": "Cundinamarca",
+    "addressCountry": "CO"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Bogotá"
+  },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "opens": "00:00",
+    "closes": "23:59"
+  }],
+  "medicalSpecialty": [
+    "Medicina General",
+    "Atención Médica Domiciliaria",
+    "Enfermería Domiciliaria",
+    "Terapia Respiratoria",
+    "Terapia Física",
+    "Psicología",
+    "Teleconsulta"
+  ],
+  "sameAs": [
+    "https://wa.me/573159245776"
+  ]
+}
+</script>
+<style>
+
+/* ==========================
+VARIABLES
+========================== */
+
+:root{
+
+--primary:#0D3B66;
+--secondary:#00A896;
+--light:#F8FAFC;
+--dark:#1E293B;
+--white:#FFFFFF;
+
+}
+
+/* ==========================
+RESET
+========================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--dark);
+overflow-x:hidden;
+}
+
+/* ==========================
+CONTENEDOR
+========================== */
+
+.container{
+width:95%;
+max-width:1200px;
+margin:auto;
+}
+
+/* ==========================
+HEADER
+========================== */
+
+header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+
+background:rgba(255,255,255,.95);
+
+backdrop-filter:blur(10px);
+
+box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+z-index:1000;
+
+}
+
+.navbar{
+
+height:70px;
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+}
+
+.logo{
+
+display:flex;
+align-items:center;
+gap:10px;
+
+}
+
+.logo img{
+
+width:50px;
+height:auto;
+
+}
+
+.logo-text{
+
+font-size:1.1rem;
+font-weight:700;
+color:var(--primary);
+
+line-height:1.2;
+
+}
+
+.menu{
+
+display:flex;
+gap:25px;
+list-style:none;
+
+}
+
+.menu a{
+
+text-decoration:none;
+color:var(--dark);
+font-weight:500;
+
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:var(--secondary);
+
+}
+
+.btn-header{
+
+background:var(--secondary);
+
+color:white;
+
+padding:10px 20px;
+
+border-radius:40px;
+
+text-decoration:none;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn-header:hover{
+
+transform:translateY(-2px);
+
+}
+/* ==========================
+HERO SOLO IMAGEN
+========================== */
+
+.hero{
+    width:100%;
+    height:100vh;
+    margin-top:70px; /* altura del menú */
+    overflow:hidden;
+    background:#fff;
+    padding:0;
+}
+
+.hero-content{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.hero-text{
+    display:none;
+}
+
+.hero-image{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+.hero-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    max-width:none;
+    filter:none;
+    animation:none;
+}
+/* BOTÓN WHATSAPP MEJORADO */
+
+.whatsapp-float{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    width:60px;
+    height:60px;
+    background:#25D366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    text-decoration:none;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    z-index:9999;
+    transition:.3s;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.1);
+}
+
+@media(max-width:768px){
+
+    .whatsapp-float{
+        width:55px;
+        height:55px;
+        bottom:15px;
+        right:15px;
+        font-size:28px;
+    }
+
+}
+@media(max-width:768px){
+
+    .hero{
+        height:auto;
+        margin-top:70px;
+    }
+
+    .hero-image img{
+        width:100%;
+        height:auto;
+        object-fit:contain;
+    }
+
+}
+</style>
+
+    </head>
+
+<body>
+
+<header>
+
+    <div class="container">
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <img src="assets/img/logo8796.jpg" alt="Bienestar en el Hogar">
+
+                <div class="logo-text">
+                    Bienestar en el Hogar
+                </div>
+
+            </div>
+
+            <ul class="menu">
+
+                <li><a href="index.html">inicio</a></li>
+                <li><a href="servicios.html">servicios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+
+            </ul>
+
+            <a href="https://wa.me/573159245776"
+               class="btn-header"
+               target="_blank">
+               WhatsApp
+            </a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+<section class="hero">
+
+    <div class="container">
+
+        <div class="hero-content">
+
+            <!-- TEXTO -->
+            <div class="hero-text">
+
+                <span class="hero-badge">
+                    Atención Médica Domiciliaria 24/7
+                </span>
+
+                <h1>
+                    Atención Médica <br>
+                    Domiciliaria en Bogotá
+                </h1>
+
+                <p>
+                    Llevamos salud, bienestar y tranquilidad hasta tu hogar.
+                    Contamos con médicos, enfermería y terapeutas capacitados
+                    para brindarte atención profesional donde más la necesitas.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="https://wa.me/573159245776"
+                       class="btn-whatsapp"
+                       target="_blank">
+                        Solicitar Servicio
+                    </a>
+
+                    <a href="tel:3159245776"
+                       class="btn-call">
+                        Llamar Ahora
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- IMAGEN -->
+            <div class="hero-image">
+
+                <img src="assets/img/nosotro.png"
+                     alt="Bienestar en el Hogar">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- =====================================
+QUIÉNES SOMOS / SERVICIOS MÉDICOS DOMICILIARIOS
+===================================== -->
+
+<section id="nosotros" class="about">
+
+  <div class="container">
+
+    <div class="about-content">
+
+      <div class="about-text">
+
+        <span>QUIÉNES SOMOS</span>
+
+        <h2>
+          Servicios Médicos Domiciliarios con Atención Humana, Segura y Profesional
+        </h2>
+
+        <p>
+          Somos una IPS de atención médica domiciliaria especializada en brindar servicios de salud en la comodidad del hogar.
+          Nuestro objetivo es acercar la atención médica a los pacientes, evitando traslados innecesarios y garantizando un cuidado integral.
+        </p>
+
+        <p>
+          Contamos con un equipo interdisciplinario de médicos, enfermeras y terapeutas altamente capacitados,
+          enfocados en ofrecer una atención oportuna, segura y con enfoque humano para cada paciente.
+        </p>
+
+        <p>
+          Brindamos servicios tanto preventivos como asistenciales, con seguimiento clínico personalizado,
+          adaptado a las necesidades de niños, adultos y adultos mayores.
+        </p>
+
+        <a href="#servicios" class="about-btn">Ver nuestros servicios</a>
+
+      </div>
+
+      <div class="about-image">
+
+        <img src="assets/img/nosotro.png" alt="Atención médica domiciliaria">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+<style>
+/* =====================================
+SERVICIOS
+===================================== */
+
+.services{
+
+padding:100px 0;
+
+background:#ffffff;
+
+}
+
+.section-title{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+.section-title span{
+
+color:var(--secondary);
+
+font-weight:700;
+
+letter-spacing:2px;
+
+}
+
+.section-title h2{
+
+font-size:2.7rem;
+
+margin-top:10px;
+
+color:var(--primary);
+
+}
+
+.section-title p{
+
+margin-top:15px;
+
+color:#64748B;
+
+font-size:1.1rem;
+
+}
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+background:white;
+
+border-radius:25px;
+
+padding:35px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-icon{
+
+width:90px;
+
+height:90px;
+
+margin:auto;
+
+background:
+linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+margin-bottom:25px;
+
+}
+
+.service-icon i{
+
+font-size:35px;
+
+color:white;
+
+}
+
+.service-card h3{
+
+margin-bottom:15px;
+
+color:var(--primary);
+
+}
+
+.service-card p{
+
+color:#64748B;
+
+line-height:1.7;
+
+margin-bottom:25px;
+
+}
+
+.service-card a{
+
+display:inline-block;
+
+background:var(--secondary);
+
+color:white;
+
+padding:12px 25px;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:600;
+
+}
+/* ===== CONTENEDOR GENERAL ===== */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+/* ===== SECCIÓN ABOUT ===== */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+/* ===== TEXTO ===== */
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text span {
+  display: inline-block;
+  color: #0b73d6;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.about-text h2 {
+  font-size: 36px;
+  color: #1f2937;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.about-text p {
+  font-size: 16px;
+  color: #6b7280;
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+/* ===== BOTÓN ===== */
+.about-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #0b73d6, #00b894);
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(11, 115, 214, 0.25);
+}
+
+.about-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(11, 115, 214, 0.35);
+}
+
+/* ===== IMAGEN ===== */
+.about-image {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.about-image img:hover {
+  transform: scale(1.03);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 28px;
+  }
+}
+</style>
+
+<section class="services-mini">
+
+  <div class="container">
+
+    <div class="section-title">
+      <span>NUESTROS SERVICIOS</span>
+      <h2>Atención Médica Integral en Casa</h2>
+      <p>Servicios diseñados para tu comodidad, seguridad y bienestar.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <h3>Medicina General</h3>
+        <p>Diagnóstico, tratamiento y seguimiento médico en casa.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Enfermería</h3>
+        <p>Curaciones, medicamentos y cuidados profesionales.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Terapias</h3>
+        <p>Respiratoria, física y rehabilitación domiciliaria.</p>
+      </div>
+
+      <div class="service-card">
+        <h3>Procedimientos</h3>
+        <p>Inyecciones, sueros, lavado de oídos y más.</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- =====================================
+CTA FINAL
+===================================== -->
+
+<section class="cta">
+
+<div class="container">
+
+<h2>
+¿Necesitas Atención Médica en Casa?
+</h2>
+
+<p>
+Contáctanos ahora mismo y recibe atención profesional en la comodidad de tu hogar.
+</p>
+
+<a href="https://wa.me/573159245776" target="_blank">
+
+Solicitar Servicio por WhatsApp
+
+</a>
+
+</div>
+
+</section>
+
+<style>
+
+.cta{
+
+padding:100px 20px;
+
+text-align:center;
+
+background:
+linear-gradient(
+135deg,
+var(--primary),
+var(--secondary)
+);
+
+}
+
+.cta h2{
+
+color:white;
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+}
+
+.cta p{
+
+color:white;
+
+font-size:1.2rem;
+
+margin-bottom:30px;
+
+}
+
+.cta a{
+
+display:inline-block;
+
+background:white;
+
+color:var(--primary);
+
+padding:18px 40px;
+
+border-radius:50px;
+
+font-weight:700;
+
+text-decoration:none;
+
+}
+
+</style>
+
+<!-- =====================================
+FOOTER
+===================================== -->
+
+<footer>
+
+<div class="container">
+
+<div class="footer-content">
+
+<div>
+
+<h3>Bienestar en el Hogar</h3>
+
+<p>
+Cuidamos de ti, donde más importa: tu hogar.
+</p>
+
+</div>
+
+<div>
+
+<h4>Contacto</h4>
+
+<p>📞 315 924 5776</p>
+
+<p>✉️ serviciodomiciliario24@gmail.com</p>
+
+</div>
+
+<div>
+
+<h4>Servicios</h4>
+
+<p>Medicina General</p>
+<p>Enfermería</p>
+<p>Terapias</p>
+<p>Teleconsulta</p>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 Bienestar en el Hogar. Todos los derechos reservados.
+
+</p>
+
+</div>
+
+</footer>
+
+<style>
+
+footer{
+
+background:#0D3B66;
+
+color:white;
+
+padding:70px 0 30px;
+
+}
+
+.footer-content{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:40px;
+
+margin-bottom:40px;
+
+}
+
+.footer-content h3,
+.footer-content h4{
+
+margin-bottom:15px;
+
+}
+
+.footer-content p{
+
+line-height:1.8;
+
+color:#dbeafe;
+
+}
+
+footer hr{
+
+border:none;
+
+height:1px;
+
+background:rgba(255,255,255,.15);
+
+margin-bottom:25px;
+
+}
+
+.copyright{
+
+text-align:center;
+
+color:#dbeafe;
+
+}
+
+</style>
+
+<!-- BOTÓN FLOTANTE WHATSAPP -->
+<a href="https://wa.me/573159245776" class="whatsapp-float" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+</body>
+</html>

@@ -1,0 +1,42 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Caches
+*.log
+*.cache
+*.tmp
+
+# PyCharm project settings
+.idea/
+
+# Virtual environment
+venv/
+env/
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Node modules (if using npm)
+node_modules/
+
+# Build directories
+dist/
+build/
+
+# Images or files you don’t want tracked (optional)
+*.psd
+*.xcf
+*.ai
+*.zip
+*.rar
+
+# Git ignore the .env file (for environment secrets)
+.env
+
+# Ignore personal files
+*.swp
+*.swo
+*~
