@@ -95,21 +95,23 @@ href="https://www.bienestarentuhogar.com">
 }
 </script>
 <style>
-
 /* ==========================
-VARIABLES
+VARIABLES (PASTEL PROFESIONAL)
 ========================== */
-
 :root{
 
---primary:#0D3B66;
---secondary:#00A896;
---light:#F8FAFC;
---dark:#1E293B;
---white:#FFFFFF;
+--primary:#4F6D8A;     /* azul más profundo y profesional */
+--secondary:#3FAF9A;   /* verde agua más intenso */
+--accent:#E6A46A;      /* durazno más sólido */
+
+--light:#B8C6D9;       /* fondo más oscuro (mejor contraste) */
+--dark:#1F2A37;        /* texto más fuerte y legible */
+--white:#FFFFFF;       /* blanco limpio */
+
+--muted:#7E8A97;       /* textos secundarios más visibles */
+--border:#9FB2C7;      /* bordes más definidos */
 
 }
-
 /* ==========================
 RESET
 ========================== */
@@ -130,8 +132,7 @@ background:var(--light);
 color:var(--dark);
 overflow-x:hidden;
 }
-
-/* ==========================
+=======================
 CONTENEDOR
 ========================== */
 
@@ -214,34 +215,85 @@ font-weight:500;
 transition:.3s;
 
 }
-
 .menu a:hover{
-
-color:var(--secondary);
-
+    color:var(--secondary);
 }
 
+/* BOTON WHATSAPP */
+
 .btn-header{
-
-background:var(--secondary);
-
-color:white;
-
-padding:10px 20px;
-
-border-radius:40px;
-
-text-decoration:none;
-
-font-weight:600;
-
-transition:.3s;
-
+    background:var(--secondary);
+    color:white;
+    padding:10px 18px;
+    border-radius:40px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+    white-space:nowrap;
 }
 
 .btn-header:hover{
+    transform:translateY(-2px);
+}
 
-transform:translateY(-2px);
+/* ==========================
+CELULARES
+========================== */
+
+@media (max-width:768px){
+
+    .btn-header{
+        padding:7px 12px;
+        font-size:13px;
+        border-radius:30px;
+    }
+
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width:480px){
+
+    .btn-header{
+        padding:6px 10px;
+        font-size:12px;
+    }
+
+}
+/* ==========================
+NAVBAR MOVIL
+========================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        gap:8px;
+    }
+
+    .logo img{
+        width:40px;
+        height:auto;
+    }
+
+    .menu{
+        display:flex;
+        gap:10px;
+        margin:0;
+        padding:0;
+    }
+
+    .menu a{
+        font-size:12px;
+    }
+
+    .btn-header{
+        font-size:11px;
+        padding:6px 8px;
+        border-radius:20px;
+    }
 
 }
 /* ==========================
@@ -250,8 +302,8 @@ HERO SOLO IMAGEN
 
 .hero{
     width:100%;
-    height:100vh;
-    margin-top:70px; /* altura del menú */
+    min-height:100vh;
+    margin-top:70px;
     overflow:hidden;
     background:#fff;
     padding:0;
@@ -269,19 +321,63 @@ HERO SOLO IMAGEN
 
 .hero-image{
     width:100%;
-    height:100%;
     display:block;
 }
 
 .hero-image img{
     width:100%;
-    height:100%;
-    object-fit:cover;
+    height:auto;
     display:block;
-    max-width:none;
+    max-width:100%;
     filter:none;
     animation:none;
 }
+
+/* ==========================
+TABLETS
+========================== */
+
+@media (max-width:992px){
+
+    .hero{
+        min-height:auto;
+    }
+
+    .hero-image img{
+        width:100%;
+        height:auto;
+    }
+
+}
+
+/* ==========================
+CELULARES
+========================== */
+
+@media (max-width:768px){
+
+    .hero{
+        min-height:auto;
+        margin-top:70px;
+    }
+
+    .hero-content{
+        height:auto;
+    }
+
+    .hero-image{
+        width:100%;
+        height:auto;
+    }
+
+    .hero-image img{
+        width:100%;
+        height:auto;
+        display:block;
+    }
+
+}
+
 /* BOTÓN WHATSAPP MEJORADO */
 
 .whatsapp-float{
@@ -318,20 +414,6 @@ HERO SOLO IMAGEN
     }
 
 }
-@media(max-width:768px){
-
-    .hero{
-        height:auto;
-        margin-top:70px;
-    }
-
-    .hero-image img{
-        width:100%;
-        height:auto;
-        object-fit:contain;
-    }
-
-}
 </style>
 
     </head>
@@ -349,7 +431,6 @@ HERO SOLO IMAGEN
                 <img src="assets/img/logo8796.jpg" alt="Bienestar en el Hogar">
 
                 <div class="logo-text">
-                    Bienestar en el Hogar
                 </div>
 
             </div>
