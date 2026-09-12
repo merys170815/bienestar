@@ -1,626 +1,4300 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domisalud JAC - Servicios Médicos a Domicilio</title>
-    <meta name="description" content="Domisalud JAC ofrece servicios médicos a domicilio, incluyendo enfermería, terapia respiratoria, ocupacional, fonoaudiología, curaciones, lavado de oído, medicina general, sueros vitaminizados y más.">
-    <meta name="keywords" content="servicios médicos, enfermería, terapia respiratoria, medicina general, sueros vitaminizado">
-    <link rel="stylesheet" href="path/to/your/styles.css"> <!-- Actualiza con tu ruta de CSS -->
-</head>
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-CO">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Domisalud JAC - Servicios Médicos a Domicilio</title>
-    <meta name="description" content="Domisalud JAC ofrece servicios médicos a domicilio, incluyendo enfermería, terapia respiratoria, ocupacional, fonoaudiología, curaciones, lavado de oído, medicina general, sueros vitaminizados y más.">
-    <meta name="keywords" content="servicios médicos, enfermería, terapia respiratoria, medicina general, sueros vitaminizado">
+  <meta charset="UTF-8">
 
-    <!-- Favicons -->
-    <link href="assets/img/domisalud logo.png" rel="icon" type="image/png">
-    <link href="assets/img/domisalud logo.png" rel="apple-touch-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <title>CAPSALUD | Médico a Domicilio en Bogotá | Su Médico en Casa</title>
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-</head>
+  <meta name="description"
+        content="CAPSALUD ofrece atención médica a domicilio en Bogotá: consultas médicas, enfermería, terapias, procedimientos, laboratorios, electrocardiogramas y ecografías. Solicita atención por WhatsApp.">
 
-  <!-- WhatsApp Floating Icon -->
-<a href="https://wa.me/573242181960" class="whatsapp-float" target="_blank">
-  <i class="bi bi-whatsapp"></i>
-</a>
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="CAPSALUD">
+  <meta name="language" content="Spanish">
+
+  <link rel="canonical" href="https://capsalud2024.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_CO">
+  <meta property="og:title" content="CAPSALUD | Su Médico en Casa">
+  <meta property="og:description"
+        content="Atención médica y servicios de salud a domicilio en Bogotá.">
+  <meta property="og:url" content="https://capsalud2024.github.io/">
+  <meta property="og:site_name" content="CAPSALUD">
+
+  <!-- FAVICON -->
+<link rel="icon"
+      type="image/png"
+      href="assets/img/logoc.png">
+
+<link rel="apple-touch-icon"
+      href="assets/img/logoc.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap"
+        rel="stylesheet">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MedicalBusiness",
+  "name": "CAPSALUD - Su Médico en Casa",
+  "description": "Servicios de salud y atención médica a domicilio en Bogotá.",
+  "url": "https://capsalud2024.github.io/",
+  "telephone": "+57 302 712 5931",
+  "email": "capsaludsas@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle 83 # 19-36",
+    "addressLocality": "Bogotá",
+    "addressRegion": "Bogotá D.C.",
+    "addressCountry": "CO"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Bogotá"
+  }
+}
+</script>
+  </script>
 
 <style>
-  .whatsapp-float {
-    position: fixed;
-    width: 60px;
-    height: 60px;
-    bottom: 40px;
-    right: 40px;
-    background-color: #25d366;
-    color: #FFF;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 30px;
-    box-shadow: 2px 2px 3px #999;
-    z-index: 100;
+
+/* =========================================================
+   CAPSALUD — MOBILE FIRST
+   Optimizado principalmente para celulares
+========================================================= */
+
+:root {
+
+  --primary: #0b6f86;
+  --primary-dark: #07566a;
+  --secondary: #13a6a0;
+  --accent: #dff7f5;
+
+  --navy: #102f3d;
+  --text: #304854;
+  --muted: #6c7f88;
+
+  --white: #ffffff;
+  --background: #f5fafb;
+  --border: #e2edef;
+
+  --shadow-sm: 0 6px 20px rgba(16,47,61,.06);
+  --shadow: 0 14px 40px rgba(16,47,61,.09);
+  --shadow-lg: 0 25px 65px rgba(16,47,61,.13);
+
+  --radius-sm: 12px;
+  --radius: 18px;
+  --radius-lg: 26px;
+
+  --container: 1180px;
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*,
+*::before,
+*::after {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+html {
+
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+
+body {
+
+  font-family: "Inter", sans-serif;
+
+  color: var(--text);
+
+  background: var(--white);
+
+  line-height: 1.6;
+
+  overflow-x: hidden;
+
+  width: 100%;
+
+  min-width: 0;
+}
+
+
+a {
+
+  color: inherit;
+  text-decoration: none;
+}
+
+
+img {
+
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+button,
+a {
+
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+button {
+
+  font-family: inherit;
+}
+
+
+.container {
+
+  width: min(
+    var(--container),
+    calc(100% - 28px)
+  );
+
+  margin-left: auto;
+  margin-right: auto;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   TOP BAR
+========================================================= */
+
+.topbar {
+
+  background: var(--navy);
+
+  color: rgba(255,255,255,.9);
+
+  font-size: 12px;
+}
+
+
+.topbar-inner {
+
+  min-height: 34px;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 10px;
+
+  text-align: center;
+}
+
+
+.topbar span {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 7px;
+}
+
+
+.topbar strong {
+
+  color: #fff;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+
+  position: sticky;
+
+  top: 0;
+
+  z-index: 1000;
+
+  background: rgba(255,255,255,.96);
+
+  backdrop-filter: blur(14px);
+
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom:
+    1px solid rgba(226,237,239,.8);
+}
+
+
+.navbar {
+
+  min-height: 66px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  position: relative;
+}
+
+
+.brand {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  flex-shrink: 1;
+
+  min-width: 0;
+}
+
+
+.brand-icon {
+
+  width: 41px;
+  height: 41px;
+
+  flex: 0 0 41px;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--primary),
+      var(--secondary)
+    );
+
+  display: grid;
+
+  place-items: center;
+
+  box-shadow:
+    0 8px 20px rgba(11,111,134,.20);
+}
+
+
+.brand-icon svg {
+
+  width: 24px;
+  height: 24px;
+}
+
+
+.brand-text {
+
+  min-width: 0;
+}
+
+
+.brand-text strong {
+
+  display: block;
+
+  font-family: "Manrope", sans-serif;
+
+  font-size: 18px;
+
+  line-height: 1;
+
+  letter-spacing: -.4px;
+
+  color: var(--navy);
+
+  white-space: nowrap;
+}
+
+
+.brand-text span {
+
+  display: block;
+
+  font-size: 8px;
+
+  letter-spacing: 1.3px;
+
+  text-transform: uppercase;
+
+  color: var(--primary);
+
+  font-weight: 700;
+
+  margin-top: 4px;
+
+  white-space: nowrap;
+}
+
+
+.nav {
+
+  display: none;
+}
+
+
+.menu-btn {
+
+  display: grid;
+
+  place-items: center;
+
+  width: 43px;
+  height: 43px;
+
+  flex: 0 0 43px;
+
+  border:
+    1px solid var(--border);
+
+  background: #fff;
+
+  border-radius: 12px;
+
+  cursor: pointer;
+
+  color: var(--navy);
+
+  touch-action: manipulation;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+  position: relative;
+
+  overflow: hidden;
+
+  padding:
+    52px 0 70px;
+
+  background:
+
+    linear-gradient(
+      180deg,
+      rgba(248,252,253,.95) 0%,
+      rgba(248,252,253,.90) 48%,
+      rgba(248,252,253,.84) 100%
+    ),
+
+    url("assets/img/pic07.jpg")
+    center center / cover no-repeat;
+}
+
+
+.hero-glow {
+
+  position: absolute;
+
+  width: 260px;
+  height: 260px;
+
+  border-radius: 50%;
+
+  filter: blur(70px);
+
+  pointer-events: none;
+
+  opacity: .25;
+}
+
+
+.hero-glow-1 {
+
+  top: -130px;
+
+  right: -100px;
+
+  background:
+    rgba(27,174,161,.22);
+}
+
+
+.hero-glow-2 {
+
+  bottom: -160px;
+
+  left: -120px;
+
+  background:
+    rgba(54,126,220,.15);
+}
+
+
+/* =========================================================
+   HERO GRID
+========================================================= */
+
+.hero-grid {
+
+  position: relative;
+
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 42px;
+
+  align-items: center;
+
+  min-width: 0;
+}
+
+
+.hero-content {
+
+  max-width: 700px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.eyebrow {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 12px;
+
+  max-width: 100%;
+
+  border:
+    1px solid rgba(27,150,145,.16);
+
+  border-radius: 999px;
+
+  background:
+    rgba(255,255,255,.80);
+
+  backdrop-filter: blur(8px);
+
+  -webkit-backdrop-filter: blur(8px);
+
+  color: #167c78;
+
+  font-size: 11px;
+
+  line-height: 1.3;
+
+  font-weight: 700;
+
+  box-shadow:
+    0 6px 22px rgba(24,87,100,.05);
+}
+
+
+.eyebrow-dot {
+
+  width: 7px;
+  height: 7px;
+
+  flex: 0 0 7px;
+
+  border-radius: 50%;
+
+  background: #22b6a8;
+
+  box-shadow:
+    0 0 0 4px rgba(34,182,168,.10);
+
+  animation:
+    pulseDot 2s infinite;
+}
+
+
+@keyframes pulseDot {
+
+  0%,
+  100% {
+
+    box-shadow:
+      0 0 0 4px rgba(34,182,168,.10);
   }
 
-  .whatsapp-float i {
-    margin-top: 16px;
+  50% {
+
+    box-shadow:
+      0 0 0 7px rgba(34,182,168,.03);
+  }
+}
+
+
+/* =========================================================
+   HERO TITULO
+========================================================= */
+
+.hero h1 {
+
+  margin:
+    21px 0 18px;
+
+  max-width: 720px;
+
+  font-family: "Manrope", sans-serif;
+
+  color: #102f3b;
+
+  font-size:
+    clamp(
+      39px,
+      12vw,
+      58px
+    );
+
+  line-height:
+    1.00;
+
+  letter-spacing:
+    -.055em;
+
+  font-weight: 800;
+
+  overflow-wrap: normal;
+
+  word-break: normal;
+}
+
+
+.hero h1 span {
+
+  display: inline;
+
+  background:
+    linear-gradient(
+      100deg,
+      #159e96 0%,
+      #21b6a8 45%,
+      #147c9b 100%
+    );
+
+  -webkit-background-clip: text;
+
+  background-clip: text;
+
+  color: transparent;
+}
+
+
+/* =========================================================
+   HERO DESCRIPCION
+========================================================= */
+
+.hero-description {
+
+  max-width: 620px;
+
+  margin:
+    0 0 26px;
+
+  color: #607781;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+}
+
+
+/* =========================================================
+   BOTONES HERO
+========================================================= */
+
+.hero-actions {
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: stretch;
+
+  gap: 10px;
+
+  width: 100%;
+}
+
+
+.hero .btn {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  width: 100%;
+
+  min-height: 54px;
+
+  padding:
+    0 18px;
+
+  border-radius: 14px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  line-height: 1.2;
+
+  font-weight: 750;
+
+  touch-action: manipulation;
+
+  transition:
+    transform .2s ease,
+    box-shadow .2s ease,
+    background .2s ease,
+    border-color .2s ease;
+}
+
+
+.hero .btn-primary {
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #159f96,
+      #0d7e89
+    );
+
+  box-shadow:
+    0 12px 26px rgba(17,135,132,.22);
+}
+
+
+.hero .btn-secondary {
+
+  color: #173e4a;
+
+  background:
+    rgba(255,255,255,.90);
+
+  border:
+    1px solid #d9e8eb;
+
+  box-shadow:
+    0 6px 18px rgba(30,75,85,.05);
+}
+
+
+.btn-arrow {
+
+  margin-left: 2px;
+
+  font-size: 19px;
+
+  line-height: 1;
+}
+
+
+/* =========================================================
+   TRUST
+========================================================= */
+
+.hero-trust {
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+
+.trust-item {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #617780;
+
+  font-size: 12px;
+
+  font-weight: 600;
+
+  min-width: 0;
+}
+
+
+.trust-check {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 20px;
+  height: 20px;
+
+  flex: 0 0 20px;
+
+  border-radius: 50%;
+
+  background: #e3f7f4;
+
+  color: #159b91;
+
+  font-size: 11px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   HERO VISUAL
+========================================================= */
+
+.hero-visual {
+
+  position: relative;
+
+  width: 100%;
+
+  min-height: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 0;
+}
+
+
+.hero-card {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 510px;
+
+  padding: 21px;
+
+  border-radius: 23px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,.97),
+      rgba(247,252,253,.93)
+    );
+
+  border:
+    1px solid rgba(255,255,255,.9);
+
+  box-shadow:
+    0 24px 55px rgba(24,73,83,.12),
+    0 6px 18px rgba(24,73,83,.05);
+
+  backdrop-filter: blur(14px);
+
+  -webkit-backdrop-filter: blur(14px);
+
+  transform: none;
+
+  min-width: 0;
+}
+
+
+.hero-card-top {
+
+  display: flex;
+
+  align-items: flex-start;
+
+  justify-content: space-between;
+
+  gap: 10px;
+
+  padding-bottom: 18px;
+
+  border-bottom:
+    1px solid #e7eff1;
+
+  min-width: 0;
+}
+
+
+.hero-card-mini {
+
+  display: block;
+
+  margin-bottom: 3px;
+
+  color: #159c94;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: .12em;
+}
+
+
+.hero-card-title {
+
+  color: #24434d;
+
+  font-size: 13px;
+
+  font-weight: 700;
+}
+
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+.status {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 6px 9px;
+
+  border-radius: 999px;
+
+  background: #edfaf7;
+
+  color: #168d82;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  flex-shrink: 0;
+}
+
+
+.status-dot {
+
+  width: 6px;
+  height: 6px;
+
+  flex: 0 0 6px;
+
+  border-radius: 50%;
+
+  background: #22b6a8;
+
+  box-shadow:
+    0 0 0 3px rgba(34,182,168,.10);
+}
+
+
+/* =========================================================
+   HERO CARD MAIN
+========================================================= */
+
+.hero-card-main {
+
+  padding:
+    24px 0 20px;
+}
+
+
+.hero-card-icon {
+
+  width: 51px;
+  height: 51px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 15px;
+
+  border-radius: 15px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e6f8f6,
+      #d9f0f5
+    );
+
+  color: #168d91;
+}
+
+
+.hero-card-icon svg {
+
+  width: 26px;
+  height: 26px;
+}
+
+
+.hero-card h2 {
+
+  margin:
+    0 0 9px;
+
+  font-family: "Manrope", sans-serif;
+
+  color: #153943;
+
+  font-size:
+    clamp(23px,7vw,29px);
+
+  line-height: 1.14;
+
+  letter-spacing: -.035em;
+
+  font-weight: 800;
+}
+
+
+.hero-card h2 span {
+
+  color: #159c94;
+}
+
+
+.hero-card-main p {
+
+  margin: 0;
+
+  color: #6a7e85;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* =========================================================
+   SERVICIOS RAPIDOS
+========================================================= */
+
+.quick-services {
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 7px;
+
+  padding:
+    15px 0;
+
+  border-top:
+    1px solid #e7eff1;
+
+  border-bottom:
+    1px solid #e7eff1;
+}
+
+
+.quick-service {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  min-height: 43px;
+
+  padding:
+    6px 7px;
+
+  border-radius: 11px;
+
+  color: #425d65;
+
+  font-size: 12px;
+
+  font-weight: 650;
+
+  min-width: 0;
+}
+
+
+.quick-service span {
+
+  min-width: 0;
+}
+
+
+.quick-icon {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 32px;
+  height: 32px;
+
+  flex:
+    0 0 32px;
+
+  border-radius: 9px;
+
+  background:
+    #edf7f7;
+
+  color: #159b94;
+}
+
+
+.quick-icon svg {
+
+  width: 16px;
+  height: 16px;
+}
+
+
+/* =========================================================
+   HERO CARD BOTTOM
+========================================================= */
+
+.hero-card-bottom {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding-top: 17px;
+}
+
+
+.hero-contact {
+
+  min-width: 0;
+}
+
+
+.hero-contact span {
+
+  display: block;
+
+  margin-bottom: 2px;
+
+  color: #83959b;
+
+  font-size: 10px;
+}
+
+
+.hero-contact strong {
+
+  color: #284750;
+
+  font-size: 12px;
+
+  overflow-wrap: anywhere;
+}
+
+
+.small-wa {
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex:
+    0 0 44px;
+
+  border-radius: 13px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #21b879,
+      #159d82
+    );
+
+  box-shadow:
+    0 8px 18px rgba(25,158,124,.20);
+}
+
+
+.small-wa svg {
+
+  width: 21px;
+  height: 21px;
+}
+
+
+/* =========================================================
+   TARJETA FLOTANTE HERO
+========================================================= */
+
+.hero-floating-card {
+
+  position: relative;
+
+  left: auto;
+
+  bottom: auto;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  max-width: calc(100% - 20px);
+
+  margin:
+    -15px auto 0;
+
+  padding:
+    10px 13px 10px 10px;
+
+  border-radius: 15px;
+
+  background:
+    rgba(255,255,255,.96);
+
+  border:
+    1px solid rgba(226,238,240,.95);
+
+  box-shadow:
+    0 14px 30px rgba(28,77,87,.11);
+
+  backdrop-filter: blur(10px);
+
+  -webkit-backdrop-filter: blur(10px);
+
+  z-index: 5;
+
+  animation:
+    floatingCard 4s ease-in-out infinite;
+}
+
+
+@keyframes floatingCard {
+
+  0%,
+  100% {
+
+    transform:
+      translateY(0);
   }
 
-  .whatsapp-float:hover {
-    background-color: #128c7e;
-    color: white;
-    text-decoration: none;
+  50% {
+
+    transform:
+      translateY(-5px);
   }
+}
+
+
+.floating-icon {
+
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  flex:
+    0 0 36px;
+
+  border-radius: 10px;
+
+  background:
+    #e7f8f5;
+
+  color: #159b91;
+}
+
+
+.floating-icon svg {
+
+  width: 18px;
+  height: 18px;
+}
+
+
+.hero-floating-card strong {
+
+  display: block;
+
+  margin-bottom: 1px;
+
+  color: #24434c;
+
+  font-size: 11px;
+}
+
+
+.hero-floating-card span {
+
+  color: #84969b;
+
+  font-size: 9px;
+}
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats {
+
+  margin-top: -25px;
+
+  position: relative;
+
+  z-index: 5;
+}
+
+
+.stats-box {
+
+  background: white;
+
+  border:
+    1px solid var(--border);
+
+  border-radius: 18px;
+
+  box-shadow:
+    var(--shadow);
+
+  padding:
+    8px 16px;
+
+  display: grid;
+
+  grid-template-columns: 1fr;
+}
+
+
+.stat {
+
+  text-align: center;
+
+  padding:
+    13px 8px;
+
+  border-right: none;
+
+  border-bottom:
+    1px solid var(--border);
+}
+
+
+.stat:last-child {
+
+  border-bottom:
+    none;
+}
+
+
+.stat strong {
+
+  display: block;
+
+  color: var(--primary);
+
+  font-family:
+    "Manrope", sans-serif;
+
+  font-size: 23px;
+
+  line-height: 1.2;
+}
+
+
+.stat span {
+
+  font-size: 11px;
+
+  color: var(--muted);
+
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   SECCIONES GENERALES
+========================================================= */
+
+section {
+
+  scroll-margin-top:
+    80px;
+}
+
+
+.section {
+
+  padding:
+    70px 0;
+}
+
+
+.section-soft {
+
+  background:
+    var(--background);
+}
+
+
+.section-heading {
+
+  max-width: 680px;
+
+  margin-bottom:
+    34px;
+}
+
+
+.section-heading.center {
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  text-align: center;
+}
+
+
+.section-kicker {
+
+  color:
+    var(--primary);
+
+  text-transform:
+    uppercase;
+
+  font-size:
+    10px;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    1.4px;
+
+  margin-bottom:
+    8px;
+}
+
+
+.section-heading h2 {
+
+  font-family:
+    "Manrope", sans-serif;
+
+  font-size:
+    clamp(
+      29px,
+      8vw,
+      44px
+    );
+
+  line-height:
+    1.12;
+
+  letter-spacing:
+    -1.3px;
+
+  color:
+    var(--navy);
+}
+
+
+.section-heading p {
+
+  margin-top:
+    12px;
+
+  color:
+    var(--muted);
+
+  font-size:
+    14px;
+
+  line-height:
+    1.65;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.services-grid {
+
+  display: grid;
+
+  grid-template-columns:
+    1fr;
+
+  gap:
+    13px;
+}
+
+
+.service-card {
+
+  background:
+    white;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    17px;
+
+  padding:
+    22px;
+
+  min-height:
+    auto;
+
+  transition:
+    .25s ease;
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+}
+
+
+.service-card::after {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    75px;
+
+  height:
+    75px;
+
+  background:
+    rgba(19,166,160,.06);
+
+  border-radius:
+    50%;
+
+  right:
+    -30px;
+
+  bottom:
+    -30px;
+}
+
+
+.service-icon {
+
+  width:
+    49px;
+
+  height:
+    49px;
+
+  border-radius:
+    14px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  background:
+    #eaf7f8;
+
+  color:
+    var(--primary);
+
+  margin-bottom:
+    17px;
+}
+
+
+.service-icon svg {
+
+  width:
+    24px;
+
+  height:
+    24px;
+}
+
+
+.service-card h3 {
+
+  color:
+    var(--navy);
+
+  font-family:
+    "Manrope", sans-serif;
+
+  font-size:
+    17px;
+
+  margin-bottom:
+    7px;
+}
+
+
+.service-card p {
+
+  color:
+    var(--muted);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.6;
+
+  max-width:
+    100%;
+}
+
+
+/* =========================================================
+   WHY CAPSALUD
+========================================================= */
+
+.why-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr;
+
+  gap:
+    38px;
+
+  align-items:
+    center;
+}
+
+
+.why-visual {
+
+  position:
+    relative;
+
+  min-height:
+    300px;
+
+  border-radius:
+    26px;
+
+  background:
+
+    radial-gradient(
+      circle at 30% 25%,
+      rgba(19,166,160,.18),
+      transparent 35%
+    ),
+
+    linear-gradient(
+      145deg,
+      #eaf7f8,
+      #f5fbfc
+    );
+
+  overflow:
+    hidden;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+}
+
+
+.medical-symbol {
+
+  width:
+    125px;
+
+  height:
+    125px;
+
+  border-radius:
+    36px;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--primary),
+      var(--secondary)
+    );
+
+  box-shadow:
+    0 22px 45px rgba(11,111,134,.22);
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  transform:
+    rotate(-4deg);
+}
+
+
+.medical-symbol svg {
+
+  width:
+    63px;
+
+  height:
+    63px;
+}
+
+
+.floating-card {
+
+  position:
+    absolute;
+
+  background:
+    white;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    14px;
+
+  padding:
+    11px 13px;
+
+  box-shadow:
+    var(--shadow);
+}
+
+
+.floating-card.one {
+
+  left:
+    12px;
+
+  top:
+    20px;
+}
+
+
+.floating-card.two {
+
+  right:
+    12px;
+
+  bottom:
+    20px;
+}
+
+
+.floating-card strong {
+
+  display:
+    block;
+
+  color:
+    var(--navy);
+
+  font-size:
+    11px;
+}
+
+
+.floating-card span {
+
+  color:
+    var(--muted);
+
+  font-size:
+    9px;
+}
+
+
+.why-list {
+
+  display:
+    grid;
+
+  gap:
+    15px;
+
+  margin-top:
+    24px;
+}
+
+
+.why-item {
+
+  display:
+    flex;
+
+  gap:
+    11px;
+
+  align-items:
+    flex-start;
+}
+
+
+.why-check {
+
+  width:
+    35px;
+
+  height:
+    35px;
+
+  border-radius:
+    10px;
+
+  background:
+    #e8f7f5;
+
+  color:
+    var(--secondary);
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  flex-shrink:
+    0;
+
+  font-weight:
+    800;
+}
+
+
+.why-item h3 {
+
+  color:
+    var(--navy);
+
+  font-size:
+    14px;
+
+  margin-bottom:
+    2px;
+}
+
+
+.why-item p {
+
+  color:
+    var(--muted);
+
+  font-size:
+    12px;
+
+  line-height:
+    1.55;
+}
+
+
+/* =========================================================
+   COVERAGE
+========================================================= */
+
+.coverage {
+
+  background:
+    var(--navy);
+
+  color:
+    white;
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+}
+
+
+.coverage::before {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    400px;
+
+  height:
+    400px;
+
+  border:
+    1px solid rgba(255,255,255,.06);
+
+  border-radius:
+    50%;
+
+  right:
+    -230px;
+
+  top:
+    -180px;
+}
+
+
+.coverage-grid {
+
+  position:
+    relative;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr;
+
+  gap:
+    32px;
+
+  align-items:
+    center;
+}
+
+
+.coverage .section-kicker {
+
+  color:
+    #61d4cd;
+}
+
+
+.coverage h2 {
+
+  font-family:
+    "Manrope", sans-serif;
+
+  font-size:
+    clamp(
+      29px,
+      8vw,
+      46px
+    );
+
+  line-height:
+    1.12;
+
+  letter-spacing:
+    -1.4px;
+}
+
+
+.coverage p {
+
+  color:
+    rgba(255,255,255,.68);
+
+  margin-top:
+    14px;
+
+  max-width:
+    610px;
+
+  font-size:
+    14px;
+
+  line-height:
+    1.65;
+}
+
+
+.coverage-box {
+
+  background:
+    rgba(255,255,255,.07);
+
+  border:
+    1px solid rgba(255,255,255,.11);
+
+  border-radius:
+    20px;
+
+  padding:
+    21px;
+}
+
+
+.coverage-box-title {
+
+  font-size:
+    10px;
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    1px;
+
+  color:
+    rgba(255,255,255,.55);
+
+  font-weight:
+    800;
+
+  margin-bottom:
+    13px;
+}
+
+
+.coverage-row {
+
+  display:
+    flex;
+
+  gap:
+    11px;
+
+  align-items:
+    center;
+
+  padding:
+    11px 0;
+
+  border-bottom:
+    1px solid rgba(255,255,255,.08);
+}
+
+
+.coverage-row:last-child {
+
+  border-bottom:
+    none;
+}
+
+
+.coverage-row-icon {
+
+  width:
+    34px;
+
+  height:
+    34px;
+
+  border-radius:
+    10px;
+
+  background:
+    rgba(97,212,205,.12);
+
+  color:
+    #61d4cd;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  font-weight:
+    800;
+
+  flex-shrink:
+    0;
+}
+
+
+.coverage-row strong {
+
+  display:
+    block;
+
+  font-size:
+    13px;
+}
+
+
+.coverage-row span {
+
+  font-size:
+    10px;
+
+  color:
+    rgba(255,255,255,.52);
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr;
+
+  gap:
+    15px;
+}
+
+
+.contact-info {
+
+  background:
+    var(--navy);
+
+  color:
+    white;
+
+  border-radius:
+    23px;
+
+  padding:
+    27px 21px;
+
+  position:
+    relative;
+
+  overflow:
+    hidden;
+}
+
+
+.contact-info::after {
+
+  content:
+    "";
+
+  position:
+    absolute;
+
+  width:
+    190px;
+
+  height:
+    190px;
+
+  border:
+    1px solid rgba(255,255,255,.07);
+
+  border-radius:
+    50%;
+
+  right:
+    -100px;
+
+  bottom:
+    -90px;
+}
+
+
+.contact-info h2 {
+
+  font-family:
+    "Manrope", sans-serif;
+
+  font-size:
+    27px;
+
+  line-height:
+    1.15;
+
+  margin-bottom:
+    10px;
+}
+
+
+.contact-info > p {
+
+  color:
+    rgba(255,255,255,.65);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.6;
+
+  margin-bottom:
+    23px;
+}
+
+
+.contact-item {
+
+  display:
+    flex;
+
+  gap:
+    10px;
+
+  align-items:
+    flex-start;
+
+  margin-top:
+    17px;
+}
+
+
+.contact-icon {
+
+  width:
+    37px;
+
+  height:
+    37px;
+
+  border-radius:
+    10px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  color:
+    #61d4cd;
+
+  flex-shrink:
+    0;
+}
+
+
+.contact-item small {
+
+  color:
+    rgba(255,255,255,.45);
+
+  display:
+    block;
+
+  font-size:
+    9px;
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    .7px;
+}
+
+
+.contact-item strong {
+
+  display:
+    block;
+
+  font-size:
+    12px;
+
+  margin-top:
+    2px;
+
+  overflow-wrap:
+    anywhere;
+}
+
+
+.contact-card {
+
+  background:
+    white;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    23px;
+
+  padding:
+    27px 21px;
+
+  box-shadow:
+    var(--shadow);
+}
+
+
+.contact-card h3 {
+
+  font-family:
+    "Manrope", sans-serif;
+
+  font-size:
+    24px;
+
+  color:
+    var(--navy);
+
+  margin-bottom:
+    7px;
+}
+
+
+.contact-card > p {
+
+  color:
+    var(--muted);
+
+  font-size:
+    13px;
+
+  line-height:
+    1.6;
+
+  margin-bottom:
+    20px;
+}
+
+
+.contact-options {
+
+  display:
+    grid;
+
+  gap:
+    9px;
+}
+
+
+.contact-option {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  gap:
+    10px;
+
+  min-height:
+    60px;
+
+  border:
+    1px solid var(--border);
+
+  border-radius:
+    13px;
+
+  padding:
+    10px 12px;
+
+  transition:
+    .2s ease;
+}
+
+
+.contact-option-left {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+  min-width:
+    0;
+}
+
+
+.contact-option-icon {
+
+  width:
+    39px;
+
+  height:
+    39px;
+
+  border-radius:
+    10px;
+
+  background:
+    #eaf7f8;
+
+  color:
+    var(--primary);
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  flex-shrink:
+    0;
+}
+
+
+.contact-option strong {
+
+  display:
+    block;
+
+  font-size:
+    12px;
+
+  color:
+    var(--navy);
+}
+
+
+.contact-option span {
+
+  color:
+    var(--muted);
+
+  font-size:
+    10px;
+}
+
+
+.arrow {
+
+  color:
+    var(--primary);
+
+  font-size:
+    18px;
+
+  flex-shrink:
+    0;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+  background:
+    #092631;
+
+  color:
+    white;
+
+  padding:
+    43px 0 22px;
+}
+
+
+.footer-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr;
+
+  gap:
+    30px;
+
+  padding-bottom:
+    30px;
+}
+
+
+.footer-brand {
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  gap:
+    9px;
+
+  margin-bottom:
+    13px;
+}
+
+
+.footer-brand .brand-icon {
+
+  width:
+    38px;
+
+  height:
+    38px;
+}
+
+
+.footer-brand strong {
+
+  font-family:
+    "Manrope", sans-serif;
+
+  font-size:
+    17px;
+}
+
+
+.footer-brand span {
+
+  display:
+    block;
+
+  color:
+    #61d4cd;
+
+  font-size:
+    8px;
+
+  letter-spacing:
+    1.1px;
+
+  text-transform:
+    uppercase;
+}
+
+
+.footer-about {
+
+  color:
+    rgba(255,255,255,.53);
+
+  font-size:
+    12px;
+
+  line-height:
+    1.6;
+
+  max-width:
+    390px;
+}
+
+
+footer h4 {
+
+  font-size:
+    10px;
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    1px;
+
+  margin-bottom:
+    14px;
+
+  color:
+    white;
+}
+
+
+.footer-links {
+
+  display:
+    grid;
+
+  gap:
+    8px;
+}
+
+
+.footer-links a {
+
+  color:
+    rgba(255,255,255,.53);
+
+  font-size:
+    12px;
+
+  transition:
+    .2s;
+}
+
+
+.footer-bottom {
+
+  padding-top:
+    18px;
+
+  border-top:
+    1px solid rgba(255,255,255,.08);
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  gap:
+    7px;
+
+  color:
+    rgba(255,255,255,.38);
+
+  font-size:
+    10px;
+}
+
+
+/* =========================================================
+   WHATSAPP FLOTANTE
+========================================================= */
+
+.floating-whatsapp {
+
+  position:
+    fixed;
+
+  right:
+    14px;
+
+  bottom:
+    14px;
+
+  width:
+    53px;
+
+  height:
+    53px;
+
+  border-radius:
+    16px;
+
+  background:
+    #25d366;
+
+  color:
+    white;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  box-shadow:
+    0 10px 27px rgba(37,211,102,.28);
+
+  z-index:
+    999;
+
+  transition:
+    .2s ease;
+
+  touch-action:
+    manipulation;
+}
+
+
+.floating-whatsapp svg {
+
+  width:
+    26px;
+
+  height:
+    26px;
+}
+
+
+/* =========================================================
+   MOVIL MUY PEQUEÑO
+   320px - 360px
+========================================================= */
+
+@media (max-width: 360px) {
+
+  .container {
+
+    width:
+      calc(100% - 22px);
+  }
+
+
+  .navbar {
+
+    min-height:
+      62px;
+  }
+
+
+  .brand-icon {
+
+    width:
+      38px;
+
+    height:
+      38px;
+
+    flex-basis:
+      38px;
+  }
+
+
+  .brand-text strong {
+
+    font-size:
+      16px;
+  }
+
+
+  .brand-text span {
+
+    font-size:
+      7px;
+
+    letter-spacing:
+      1px;
+  }
+
+
+  .menu-btn {
+
+    width:
+      40px;
+
+    height:
+      40px;
+
+    flex-basis:
+      40px;
+  }
+
+
+  .hero {
+
+    padding:
+      44px 0 62px;
+  }
+
+
+  .hero h1 {
+
+    font-size:
+      37px;
+
+    letter-spacing:
+      -.055em;
+  }
+
+
+  .hero-description {
+
+    font-size:
+      14px;
+  }
+
+
+  .hero-card {
+
+    padding:
+      18px;
+
+    border-radius:
+      20px;
+  }
+
+
+  .hero-card h2 {
+
+    font-size:
+      22px;
+  }
+
+
+  .hero-card-main p {
+
+    font-size:
+      12px;
+  }
+
+
+  .quick-service {
+
+    font-size:
+      11px;
+  }
+
+
+  .section {
+
+    padding:
+      60px 0;
+  }
+
+
+  .section-heading h2 {
+
+    font-size:
+      28px;
+  }
+
+
+  .service-card {
+
+    padding:
+      19px;
+  }
+
+
+  .why-visual {
+
+    min-height:
+      275px;
+  }
+
+
+  .medical-symbol {
+
+    width:
+      110px;
+
+    height:
+      110px;
+
+    border-radius:
+      32px;
+  }
+
+
+  .medical-symbol svg {
+
+    width:
+      55px;
+
+    height:
+      55px;
+  }
+
+
+  .floating-card.one {
+
+    left:
+      8px;
+
+    top:
+      15px;
+  }
+
+
+  .floating-card.two {
+
+    right:
+      8px;
+
+    bottom:
+      15px;
+  }
+
+
+  .contact-info,
+  .contact-card {
+
+    padding:
+      23px 17px;
+  }
+
+
+  .floating-whatsapp {
+
+    width:
+      50px;
+
+    height:
+      50px;
+
+    right:
+      11px;
+
+    bottom:
+      11px;
+
+    border-radius:
+      15px;
+  }
+
+
+  .floating-whatsapp svg {
+
+    width:
+      24px;
+
+    height:
+      24px;
+  }
+
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (min-width: 600px) {
+
+  .container {
+
+    width:
+      min(
+        var(--container),
+        calc(100% - 40px)
+      );
+  }
+
+
+  .hero {
+
+    padding:
+      70px 0 85px;
+  }
+
+
+  .hero h1 {
+
+    font-size:
+      clamp(
+        48px,
+        8vw,
+        65px
+      );
+  }
+
+
+  .hero-actions {
+
+    flex-direction:
+      row;
+
+    align-items:
+      center;
+
+    width:
+      auto;
+  }
+
+
+  .hero .btn {
+
+    width:
+      auto;
+
+    min-width:
+      175px;
+  }
+
+
+  .hero-trust {
+
+    grid-template-columns:
+      repeat(2,auto);
+
+    gap:
+      12px 20px;
+  }
+
+
+  .quick-services {
+
+    grid-template-columns:
+      repeat(2,1fr);
+
+    gap:
+      8px;
+  }
+
+
+  .stats-box {
+
+    grid-template-columns:
+      repeat(3,1fr);
+
+    padding:
+      15px 18px;
+  }
+
+
+  .stat {
+
+    border-right:
+      1px solid var(--border);
+
+    border-bottom:
+      none;
+
+    padding:
+      7px 10px;
+  }
+
+
+  .stat:last-child {
+
+    border-right:
+      none;
+  }
+
+
+  .services-grid {
+
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+
+  .footer-grid {
+
+    grid-template-columns:
+      1.2fr .8fr;
+
+  }
+
+}
+
+
+/* =========================================================
+   DESKTOP
+========================================================= */
+
+@media (min-width: 900px) {
+
+  .container {
+
+    width:
+      min(
+        var(--container),
+        calc(100% - 40px)
+      );
+  }
+
+
+  .menu-btn {
+
+    display:
+      none;
+  }
+
+
+  .navbar {
+
+    min-height:
+      78px;
+
+    gap:
+      30px;
+  }
+
+
+  .brand-icon {
+
+    width:
+      45px;
+
+    height:
+      45px;
+
+    flex-basis:
+      45px;
+  }
+
+
+  .brand-text strong {
+
+    font-size:
+      20px;
+  }
+
+
+  .brand-text span {
+
+    font-size:
+      10px;
+  }
+
+
+  .nav {
+
+    display:
+      flex;
+
+    align-items:
+      center;
+
+    gap:
+      25px;
+  }
+
+
+  .nav a {
+
+    color:
+      #425964;
+
+    font-size:
+      14px;
+
+    font-weight:
+      600;
+
+    transition:
+      .25s ease;
+  }
+
+
+  .nav a:hover {
+
+    color:
+      var(--primary);
+  }
+
+
+  .nav-whatsapp {
+
+    background:
+      var(--primary);
+
+    color:
+      #fff !important;
+
+    padding:
+      11px 17px;
+
+    border-radius:
+      12px;
+
+    box-shadow:
+      0 8px 20px rgba(11,111,134,.18);
+  }
+
+
+  .hero {
+
+    padding:
+      90px 0 90px;
+
+    background:
+
+      linear-gradient(
+        90deg,
+        rgba(248,252,253,.97) 0%,
+        rgba(248,252,253,.93) 32%,
+        rgba(248,252,253,.82) 58%,
+        rgba(248,252,253,.72) 100%
+      ),
+
+      url("assets/img/pic07.jpg")
+      center center / cover no-repeat;
+  }
+
+
+  .hero-grid {
+
+    grid-template-columns:
+      minmax(0,1.05fr)
+      minmax(420px,.95fr);
+
+    gap:
+      65px;
+  }
+
+
+  .hero h1 {
+
+    font-size:
+      clamp(
+        48px,
+        5.3vw,
+        76px
+      );
+  }
+
+
+  .hero-description {
+
+    font-size:
+      18px;
+
+    line-height:
+      1.75;
+  }
+
+
+  .hero-actions {
+
+    flex-direction:
+      row;
+  }
+
+
+  .hero .btn {
+
+    width:
+      auto;
+  }
+
+
+  .hero-trust {
+
+    display:
+      flex;
+
+    flex-wrap:
+      wrap;
+  }
+
+
+  .hero-visual {
+
+    min-height:
+      540px;
+  }
+
+
+  .hero-card {
+
+    padding:
+      29px;
+
+    border-radius:
+      30px;
+
+    transform:
+      rotate(.3deg);
+  }
+
+
+  .hero-card:hover {
+
+    transform:
+      rotate(0deg)
+      translateY(-6px);
+  }
+
+
+  .quick-services {
+
+    grid-template-columns:
+      repeat(2,1fr);
+  }
+
+
+  .hero-floating-card {
+
+    position:
+      absolute;
+
+    left:
+      -25px;
+
+    bottom:
+      48px;
+
+    width:
+      auto;
+
+    margin:
+      0;
+
+    padding:
+      13px 17px 13px 13px;
+  }
+
+
+  .section {
+
+    padding:
+      105px 0;
+  }
+
+
+  .services-grid {
+
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+
+
+  .why-grid {
+
+    grid-template-columns:
+      .9fr 1.1fr;
+
+    gap:
+      75px;
+  }
+
+
+  .why-visual {
+
+    min-height:
+      470px;
+  }
+
+
+  .medical-symbol {
+
+    width:
+      180px;
+
+    height:
+      180px;
+
+    border-radius:
+      55px;
+  }
+
+
+  .medical-symbol svg {
+
+    width:
+      90px;
+
+    height:
+      90px;
+  }
+
+
+  .coverage-grid {
+
+    grid-template-columns:
+      1fr .8fr;
+
+    gap:
+      70px;
+  }
+
+
+  .contact-grid {
+
+    grid-template-columns:
+      .85fr 1.15fr;
+
+    gap:
+      30px;
+  }
+
+
+  .footer-grid {
+
+    grid-template-columns:
+      1.2fr .8fr .8fr;
+
+    gap:
+      50px;
+  }
+
+
+  .footer-bottom {
+
+    flex-direction:
+      row;
+
+    justify-content:
+      space-between;
+  }
+
+}
+
+
+/* =========================================================
+   HOVER SOLO EN DISPOSITIVOS CON MOUSE
+   Evita comportamientos raros en celulares
+========================================================= */
+
+@media (hover: hover) and (pointer: fine) {
+
+  .nav-whatsapp:hover {
+
+    background:
+      var(--primary-dark);
+
+    transform:
+      translateY(-1px);
+  }
+
+
+  .hero .btn-primary:hover {
+
+    transform:
+      translateY(-3px);
+
+    box-shadow:
+      0 18px 38px rgba(17,135,132,.30);
+  }
+
+
+  .hero .btn-secondary:hover {
+
+    transform:
+      translateY(-3px);
+
+    border-color:
+      #b9dadd;
+
+    box-shadow:
+      0 13px 30px rgba(30,75,85,.10);
+  }
+
+
+  .btn-primary:hover .btn-arrow {
+
+    transform:
+      translateX(4px);
+  }
+
+
+  .hero-card:hover {
+
+    transform:
+      rotate(0deg)
+      translateY(-6px);
+
+    box-shadow:
+      0 45px 90px rgba(24,73,83,.17),
+      0 12px 30px rgba(24,73,83,.08);
+  }
+
+
+  .quick-service:hover {
+
+    background:
+      #f0f8f8;
+
+    transform:
+      translateX(3px);
+  }
+
+
+  .service-card:hover {
+
+    transform:
+      translateY(-6px);
+
+    border-color:
+      #c7e1e5;
+
+    box-shadow:
+      var(--shadow);
+  }
+
+
+  .service-card:hover::after {
+
+    transform:
+      scale(1.5);
+  }
+
+
+  .contact-option:hover {
+
+    border-color:
+      #bfdce0;
+
+    background:
+      #fbfdfd;
+
+    transform:
+      translateX(3px);
+  }
+
+
+  .footer-links a:hover {
+
+    color:
+      #61d4cd;
+  }
+
+
+  .floating-whatsapp:hover {
+
+    transform:
+      translateY(-4px)
+      scale(1.03);
+  }
+
+
+  .small-wa:hover {
+
+    transform:
+      translateY(-3px)
+      scale(1.04);
+  }
+
+}
+
+
+/* =========================================================
+   ACCESIBILIDAD
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+
+    scroll-behavior:
+      auto;
+  }
+
+
+  *,
+  *::before,
+  *::after {
+
+    animation-duration:
+      .01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      .01ms !important;
+  }
+
+}
+
+
+/* =========================================================
+   EVITAR DESBORDAMIENTO HORIZONTAL
+========================================================= */
+
+.hero,
+section,
+footer,
+header {
+
+  max-width:
+    100%;
+
+  overflow-x:
+    clip;
+}
+
+
+.hero-grid > *,
+.why-grid > *,
+.coverage-grid > *,
+.contact-grid > * {
+
+  min-width:
+    0;
+}
+
+
+/* =========================================================
+   SEGURIDAD PARA ELEMENTOS DE TEXTO
+========================================================= */
+
+.hero-card,
+.service-card,
+.contact-card,
+.contact-info,
+.coverage-box,
+.floating-card {
+
+  overflow-wrap:
+    break-word;
+
+}
+
+
+/* =========================================================
+   PANTALLAS MUY ALTAS / TELEFONOS MODERNOS
+========================================================= */
+
+@supports (height: 100dvh) {
+
+  .hero {
+
+    min-height:
+      auto;
+  }
+
+}
+
+
+/* =========================================================
+   SAFE AREA PARA IPHONE
+========================================================= */
+
+@supports (padding: max(0px)) {
+
+  .floating-whatsapp {
+
+    right:
+      max(
+        14px,
+        env(safe-area-inset-right)
+      );
+
+    bottom:
+      max(
+        14px,
+        env(safe-area-inset-bottom)
+      );
+  }
+
+}
+
+/* =========================================================
+   IMAGEN HERO MÁS VISIBLE EN CELULARES
+========================================================= */
+
+@media (max-width: 599px) {
+
+  .hero {
+
+    background:
+
+      linear-gradient(
+        180deg,
+        rgba(248,252,253,.62) 0%,
+        rgba(248,252,253,.38) 42%,
+        rgba(248,252,253,.16) 100%
+      ),
+
+      url("assets/img/pic07.jpg")
+      center center / cover no-repeat;
+
+  }
+
+}
+
+/* =========================================================
+   CORRECCIÓN ICONOS SERVICIOS
+========================================================= */
+
+.services-section .service-icon {
+  position: relative;
+  z-index: 5;
+
+  width: 92px;
+  height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(
+    145deg,
+    var(--primary),
+    var(--secondary)
+  ) !important;
+
+  color: #ffffff !important;
+
+  opacity: 1 !important;
+
+  visibility: visible !important;
+
+  transform: none;
+}
+
+
+.services-section .service-icon svg {
+  display: block !important;
+
+  width: 50px !important;
+  height: 50px !important;
+
+  min-width: 50px;
+  min-height: 50px;
+
+  fill: none !important;
+
+  stroke: #ffffff !important;
+
+  stroke-width: 2.2 !important;
+
+  stroke-linecap: round !important;
+  stroke-linejoin: round !important;
+
+  opacity: 1 !important;
+
+  visibility: visible !important;
+}
+
+
+.services-section .service-visual {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 175px;
+}
+
+
+.services-section .service-orb {
+  position: absolute;
+  z-index: 1;
+}
+
+
+.services-section .service-icon {
+  z-index: 3;
+}
+
+
+/* MÓVIL */
+
+@media (max-width: 650px) {
+
+  .services-section .service-visual {
+    min-height: 150px;
+  }
+
+  .services-section .service-icon {
+    width: 82px;
+    height: 82px;
+  }
+
+  .services-section .service-icon svg {
+    width: 45px !important;
+    height: 45px !important;
+    min-width: 45px;
+    min-height: 45px;
+  }
+
+}
+/* =========================================================
+   FIN CSS
+========================================================= */
+.why-visual .medical-symbol {
+  width: 300px;
+  height: 360px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+  border-radius: 28px;
+
+  position: relative;
+  z-index: 2;
+}
+
+.why-visual .medical-symbol img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+}
 </style>
 
-   <!-- Main CSS File -->
-  <link href="assets/css/main.css" rel="stylesheet">
+</head>
 
-  <style>
-    .service-item .icon {
-      font-size: 36px; /* Tamaño del ícono */
-      color: var(--accent-color); /* Color del ícono */
-    }
-
-    .service-item {
-      border: 1px solid var(--surface-color); /* Borde del recuadro */
-      border-radius: 8px; /* Bordes redondeados */
-      padding: 15px; /* Espaciado interno */
-      background-color: var(--surface-color); /* Fondo del recuadro */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el efecto 3D */
-      transition: transform 0.3s ease; /* Efecto de transición */
-    }
-
-    .service-item:hover {
-      transform: translateY(-5px); /* Efecto de elevación al pasar el ratón */
-    }
-  </style>
+<body>
 
 
-<body class="index-page">
+<!-- =========================
+     HEADER
+========================= -->
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+<header>
+  <div class="container navbar">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto me-lg-0">
-        <h1 class="sitename">Domisalud JAC</h1>
+    <a href="index.html" class="brand" aria-label="CAPSALUD - Su Médico en Casa">
+
+      <div class="brand-icon">
+  <img src="assets/img/logoc.png"
+       alt="CAPSALUD"
+       width="41"
+       height="41">
+</div>
+
+      <div class="brand-text">
+        <strong>CAPSALUD</strong>
+        <span>Su Médico en Casa</span>
+      </div>
+
+    </a>
+
+    <button class="menu-btn"
+            id="menuBtn"
+            aria-label="Abrir menú"
+            aria-expanded="false">
+
+      <svg width="22" height="22"
+           viewBox="0 0 24 24"
+           fill="none"
+           stroke="currentColor"
+           stroke-width="2"
+           stroke-linecap="round">
+
+        <path d="M4 6h16"/>
+        <path d="M4 12h16"/>
+        <path d="M4 18h16"/>
+
+      </svg>
+
+    </button>
+
+    <nav class="nav" id="nav">
+
+      <a href="index.html#servicios">Servicios</a>
+
+      <a href="index.html#nosotros">Nosotros</a>
+
+      <a href="index.html#cobertura">Cobertura</a>
+
+      <a href="index.html#contacto">Contacto</a>
+
+      <a class="nav-whatsapp"
+         href="https://wa.me/573115081075?text=Hola%20CAPSALUD%2C%20quiero%20solicitar%20informaci%C3%B3n%20sobre%20sus%20servicios."
+         target="_blank"
+         rel="noopener"
+         aria-label="Contactar a CAPSALUD por WhatsApp">
+
+        WhatsApp
+
       </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero" class="active">Inicio</a></li>
-          <li><a href="#about">Acerca de</a></li>
-          <li><a href="#services">Servicios</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
+    </nav>
 
-      <a class="btn-getstarted" href="#about">Conócenos</a>
-
-    </div>
-  </header>
-
-  <main class="main">
-
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16672615566">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-16672615566');
-</script>
-
-    <!-- Event snippet for Page view conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-16672615566/lj_BCNPU08oZEI7Zj44-',
-      'value': 1.0,
-      'currency': 'COP'
-  });
-</script>
-
-
-    <!-- Hero Section -->
-<section id="hero" class="hero section dark-background">
-
-  <img src="assets/img/pic05.jpg" alt="Servicios Médicos a Domicilio" data-aos="fade-in">
-
-  <div class="container">
-
-    <div class="row justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-      <div class="col-xl-6 col-lg-8">
-        <h2>Cuidamos de tu salud en la comodidad de tu hogar<span>.</span></h2>
-        <p>Ofrecemos servicios médicos de calidad directamente a tu domicilio.</p>
-      </div>
-    </div>
   </div>
-</section><!-- End Hero Section -->
+</header>
 
-       <div class="row gy-4 mt-5 justify-content-center" data-aos="fade-up" data-aos-delay="200">
-    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="icon-box">
-            <i class="bi bi-clipboard-pulse"></i>
-            <h3><a href="#services">Enfermería</a></h3>
+  <main>
+
+<!-- =========================
+     HERO PREMIUM — CAPSALUD
+========================= -->
+
+<section class="hero" id="inicio">
+
+  <div class="hero-glow hero-glow-1"></div>
+  <div class="hero-glow hero-glow-2"></div>
+
+  <div class="container hero-grid">
+
+    <!-- =========================
+         HERO CONTENT
+    ========================= -->
+
+    <div class="hero-content">
+
+      <div class="eyebrow">
+        <span class="eyebrow-dot"></span>
+        Atención médica en Bogotá
+      </div>
+
+      <h1>
+        Tu salud,
+        <span>más cerca de ti.</span>
+      </h1>
+
+      <p class="hero-description">
+        Atención médica profesional directamente en tu hogar.
+        En CAPSALUD combinamos experiencia, tecnología y trato humano
+        para cuidar de ti y de tu familia donde más lo necesitas.
+      </p>
+
+      <!-- CTA -->
+
+      <div class="hero-actions">
+
+        <a
+          class="btn btn-primary"
+          href="https://wa.me/573115081075?text=Hola%20CAPSALUD%2C%20quiero%20solicitar%20una%20atenci%C3%B3n"
+          target="_blank"
+          rel="noopener"
+        >
+
+          <svg
+            width="21"
+            height="21"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.8 8.8 0 0 1-4.1-1L3 20l1.2-4.5A8.3 8.3 0 0 1 3.5 11.5a8.5 8.5 0 1 1 17.5 0Z"/>
+            <path d="M8.5 9.5c.3 2 2 4 4 5"/>
+          </svg>
+
+          Solicitar atención
+
+          <span class="btn-arrow">→</span>
+
+        </a>
+
+
+        <a
+          class="btn btn-secondary"
+          href="tel:+573115081075"
+        >
+
+          <svg
+            width="19"
+            height="19"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path d="M22 16.9v3a2 2 0 0 1-2.2 2A19.8 19.8 0 0 1 3.1 5.2 2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L9 11a16 16 0 0 0 4 4l1.3-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7A2 2 0 0 1 22 16.9Z"/>
+          </svg>
+
+          Llamar ahora
+
+        </a>
+
+      </div>
+
+
+      <!-- TRUST -->
+
+      <div class="hero-trust">
+
+        <div class="trust-item">
+          <span class="trust-check">✓</span>
+          Atención domiciliaria
         </div>
-    </div>
-    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="400">
-        <div class="icon-box">
-            <i class="bi bi-cloud"></i><!-- Ícono alternativo para Terapia Respiratoria -->
-            <h3><a href="#services">Terapia Respiratoria</a></h3>
+
+        <div class="trust-item">
+          <span class="trust-check">✓</span>
+          Profesionales de salud
         </div>
-    </div>
-    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="500">
-        <div class="icon-box">
-            <i class="bi bi-headset"></i>
-            <h3><a href="#services">Fonoaudiología</a></h3>
-        </div>
-    </div>
-    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="600">
-        <div class="icon-box">
-            <i class="bi bi-heart-pulse"></i>
-            <h3><a href="#services">Medicina General</a></h3>
-        </div>
-    </div>
-    <div class="col-xl-2 col-md-4" data-aos="fade-up" data-aos-delay="700">
-        <div class="icon-box">
-            <i class="bi bi-droplet-half"></i>
-            <h3><a href="#services">Sueros Vitaminizado</a></h3>
-        </div>
-    </div>
-</div>
 
-
-    </section><!-- /Hero Section -->
-
-    <!-- About Section -->
-    <section id="about" class="about section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-          <div class="col-lg-6 order-1 order-lg-2">
-            <img src="assets/img/pic01.jpg" class="img-fluid" alt="Acerca de Domisalud JAC">
-          </div>
-         <div class="col-lg-6 order-2 order-lg-1 content">
-  <h3>Sobre Domisalud JAC</h3>
-  <p class="fst-italic">
-    Desde 2016, en Domisalud JAC nos hemos dedicado a ofrecer servicios médicos de alta calidad en la comodidad de tu hogar.
-  </p>
-  <ul>
-    <li><i class="bi bi-check2-all"></i> <span>Misión: Brindar atención médica y terapéutica integral y personalizada en el hogar, mejorando la calidad de vida de nuestros pacientes.</span></li>
-    <li><i class="bi bi-check2-all"></i> <span>Visión: Ser líderes en el sector de servicios médicos a domicilio, reconocidos por nuestra excelencia, compromiso y empatía hacia nuestros pacientes.</span></li>
-    <li><i class="bi bi-check2-all"></i> <span>Objetivos: Ofrecer servicios médicos y terapéuticos de calidad, adaptar nuestros cuidados a las necesidades específicas de cada paciente, y mantenernos a la vanguardia en el sector de salud domiciliaria.</span></li>
-  </ul>
-  <p>
-    Nuestro equipo de profesionales está dedicado a proporcionar una atención médica de primer nivel, garantizando un servicio confiable y efectivo en cada intervención.
-  </p>
-</div>
-
-    </section><!-- /About Section -->
-
-    <!-- Clients Section -->
-    <section id="clients" class="clients section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-        <!-- Aquí podrías añadir logos de afiliados o seguros si es relevante -->
-        <div class="swiper init-swiper">
-          <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="assets/img/clients/client.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client.png" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="assets/img/clients/client.png" class="img-fluid" alt=""></div>
-          </div>
-          <div class="swiper-pagination"></div>
+        <div class="trust-item">
+          <span class="trust-check">✓</span>
+          Bogotá
         </div>
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </div>
 
-    <!-- Features Section -->
-    <section id="features" class="features section">
+
+    <!-- =========================
+         HERO PREMIUM CARD
+    ========================= -->
+
+    <div class="hero-visual">
+
+      <div class="hero-card">
+
+        <!-- CARD HEADER -->
+
+        <div class="hero-card-top">
+
+          <div>
+
+            <span class="hero-card-mini">
+              CAPSALUD
+            </span>
+
+            <span class="hero-card-title">
+              Servicios de salud
+            </span>
+
+          </div>
+
+          <div class="status">
+
+            <span class="status-dot"></span>
+
+            Atención online
+
+          </div>
+
+        </div>
+
+
+        <!-- CARD MAIN -->
+
+        <div class="hero-card-main">
+
+          <div class="hero-card-icon">
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+            >
+              <path d="M12 21s8-4.4 8-10V5l-8-3-8 3v6c0 5.6 8 10 8 10Z"/>
+              <path d="M12 8v6"/>
+              <path d="M9 11h6"/>
+            </svg>
+
+          </div>
+
+
+          <h2>
+
+            Cuidamos de ti,
+
+            <span>sin salir de casa.</span>
+
+          </h2>
+
+
+          <p>
+            Accede a diferentes servicios de salud con atención
+            profesional y acompañamiento personalizado.
+          </p>
+
+        </div>
+
+
+        <!-- SERVICES -->
+
+        <div class="quick-services">
+
+
+          <div class="quick-service">
+
+            <span class="quick-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+
+            </span>
+
+            <span>
+              Médico a domicilio
+            </span>
+
+          </div>
+
+
+          <div class="quick-service">
+
+            <span class="quick-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M9 3h6"/>
+                <path d="M10 3v4l-5 9a4 4 0 0 0 3.5 5.9h7A4 4 0 0 0 19 16l-5-9V3"/>
+              </svg>
+
+            </span>
+
+            <span>
+              Laboratorio
+            </span>
+
+          </div>
+
+
+          <div class="quick-service">
+
+            <span class="quick-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M12 3v18"/>
+                <path d="M3 12h18"/>
+              </svg>
+
+            </span>
+
+            <span>
+              Procedimientos
+            </span>
+
+          </div>
+
+
+          <div class="quick-service">
+
+            <span class="quick-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M4 4h16v16H4z"/>
+                <path d="M8 12h8"/>
+                <path d="M12 8v8"/>
+              </svg>
+
+            </span>
+
+            <span>
+              Electrocardiograma
+            </span>
+
+          </div>
+
+
+          <div class="quick-service">
+
+            <span class="quick-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <circle cx="12" cy="12" r="8"/>
+                <path d="M4 12h16"/>
+                <path d="M12 4c2 2.2 3 5 3 8s-1 5.8-3 8"/>
+                <path d="M12 4c-2 2.2-3 5-3 8s1 5.8 3 8"/>
+              </svg>
+
+            </span>
+
+            <span>
+              Ecografías
+            </span>
+
+          </div>
+
+
+          <div class="quick-service">
+
+            <span class="quick-icon">
+
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+              >
+                <path d="M12 20V10"/>
+                <path d="M8 14l4-4 4 4"/>
+                <path d="M5 4h14"/>
+              </svg>
+
+            </span>
+
+            <span>
+              Terapias
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <!-- CARD FOOTER -->
+
+        <div class="hero-card-bottom">
+
+
+          <div class="hero-contact">
+
+            <span>
+              ¿Necesitas atención?
+            </span>
+
+            <strong>
+              Estamos para ayudarte
+            </strong>
+
+          </div>
+
+
+          <a
+            class="small-wa"
+            href="https://wa.me/573115081075?text=Hola%20CAPSALUD%2C%20quiero%20solicitar%20informaci%C3%B3n"
+            target="_blank"
+            rel="noopener"
+            aria-label="Contactar a CAPSALUD por WhatsApp"
+          >
+
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M21 11.5a8.4 8.4 0 0 1-9 8.5 8.8 8.8 0 0 1-4.1-1L3 20l1.2-4.5A8.3 8.3 0 0 1 3.5 11.5a8.5 8.5 0 1 1 17.5 0Z"/>
+              <path d="M8.5 9.5c.3 2 2 4 4 5"/>
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- FLOATING BADGE -->
+
+      <div class="hero-floating-card">
+
+        <div class="floating-icon">
+
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+          >
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/>
+            <path d="M12 8v6"/>
+            <path d="M9 11h6"/>
+          </svg>
+
+        </div>
+
+
+        <div>
+
+          <strong>
+            Atención humana
+          </strong>
+
+          <span>
+            Donde más la necesitas
+          </span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+    <!-- =========================
+         STATS
+    ========================= -->
+
+    <div class="stats">
 
       <div class="container">
 
-        <div class="row gy-4">
-          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/pic10.jpg" alt=""></div>
-          <div class="col-lg-6">
+        <div class="stats-box">
 
-            <div class="features-item d-flex ps-0 ps-lg-3 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="200">
-              <i class="bi bi-archive flex-shrink-0"></i>
-              <div>
-                <h4>Atención Personalizada</h4>
-                <p>Adaptamos nuestros servicios a tus necesidades específicas.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="300">
-              <i class="bi bi-basket flex-shrink-0"></i>
-              <div>
-                <h4>Profesionales Capacitados</h4>
-                <p>Contamos con un equipo altamente capacitado en diversas áreas de la salud.</p>
-              </div>
-            </div><!-- End Features Item-->
-
-            <div class="features-item d-flex mt-5 ps-0 ps-lg-3" data-aos="fade-up" data-aos-delay="400">
-              <i class="bi bi-broadcast flex-shrink-0"></i>
-              <div>
-                <h4>Equipos de Última Generación</h4>
-                <p>Utilizamos tecnología avanzada para garantizar una atención médica eficiente y segura.</p>
-              </div>
-            </div><!-- End Features Item-->
-
+          <div class="stat">
+            <strong>Bogotá</strong>
+            <span>Zona principal de atención</span>
           </div>
-        </div>
 
-      </div>
+          <div class="stat">
+            <strong>Domicilio</strong>
+            <span>Servicios de salud en tu hogar</span>
+          </div>
 
-    </section><!-- /Features Section -->
-
-  <!-- Services Section -->
-<section id="services" class="services section">
-
-<!-- Section Title -->
-<div class="container section-title" data-aos="fade-up">
-  <h2>Nuestros Servicios</h2>
-  <p>Conoce más sobre los servicios que ofrecemos</p>
-</div><!-- End Section Title -->
-
-<div class="container">
-
-  <div class="row gy-4">
-
-    <!-- Servicio de Enfermería -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-heart-pulse"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Enfermería</h3>
-        </a>
-        <p>Cuidados especializados y atención personalizada.</p>
-        <ul>
-          <li>Monitoreo de signos vitales.</li>
-          <li>Administración de medicamentos.</li>
-          <li>Curaciones de heridas.</li>
-          <li>Control de glucosa.</li>
-          <li>Enemas rectales.</li>
-          <li>Manejo de sondas vesicales.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Terapia Respiratoria -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-breath"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Terapia Respiratoria</h3>
-        </a>
-        <p>Atención integral para afecciones respiratorias.</p>
-        <ul>
-          <li>Terapia con oxígeno.</li>
-          <li>Inhaloterapia.</li>
-          <li>Rehabilitación pulmonar.</li>
-          <li>Cuidados postquirúrgicos respiratorios.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Fonoaudiología -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-headset"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Fonoaudiología</h3>
-        </a>
-        <p>Tratamiento y mejora de problemas de comunicación.</p>
-        <ul>
-          <li>Evaluación y diagnóstico de trastornos del habla.</li>
-          <li>Terapia de lenguaje para niños y adultos.</li>
-          <li>Rehabilitación de la voz.</li>
-          <li>Asesoría en dificultades de deglución.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Medicina General -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-stethoscope"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Medicina General</h3>
-        </a>
-        <p>Consultas médicas a domicilio para tu conveniencia.</p>
-        <ul>
-          <li>Evaluaciones médicas completas.</li>
-          <li>Diagnóstico y tratamiento de enfermedades comunes.</li>
-          <li>Referencias a especialistas si es necesario.</li>
-          <li>Exámenes de rutina y seguimiento.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Sueros Vitaminizado -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-droplet-half"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Sueros Vitaminizado</h3>
-        </a>
-        <p>Terapias de suero para mejorar tu bienestar y energía.</p>
-        <ul>
-          <li>Infusión de suero con vitaminas esenciales.</li>
-          <li>Terapias para la rehidratación rápida.</li>
-          <li>Fortalecimiento del sistema inmunológico.</li>
-          <li>Mejora de la energía y vitalidad.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Psicología -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-brain"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Psicología</h3>
-        </a>
-        <p>Orientación y tratamiento psicológico personalizado.</p>
-        <ul>
-          <li>Evaluación psicológica.</li>
-          <li>Terapias individuales y grupales.</li>
-          <li>Intervenciones en crisis.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Lavado de Ojos -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-eye"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Lavado de Ojos</h3>
-        </a>
-        <p>Procedimientos para el cuidado y limpieza ocular.</p>
-        <ul>
-          <li>Tratamiento de irritaciones oculares.</li>
-          <li>Eliminación de cuerpos extraños.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Terapias de Salud Ocupacional -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-briefcase"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Terapias de Salud Ocupacional</h3>
-        </a>
-        <p>Atención especializada para población especial en el ámbito laboral.</p>
-        <ul>
-          <li>Terapias ergonómicas.</li>
-          <li>Evaluaciones y adaptación de puestos de trabajo.</li>
-          <li>Programas de prevención de lesiones.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Clínica de Heridas -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1000">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-bandage"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Clínica de Heridas</h3>
-        </a>
-        <p>Cuidado especializado para heridas crónicas y complicadas.</p>
-        <ul>
-          <li>Tratamiento de heridas diabéticas.</li>
-          <li>Atención de úlceras por presión.</li>
-          <li>Cuidado postquirúrgico de heridas.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Llamadas Telefónicas con Orientación Médica -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1100">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-phone"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Llamadas Telefónicas con Orientación Médica</h3>
-        </a>
-        <p>Consulta y asesoría médica a través de llamadas telefónicas.</p>
-        <ul>
-          <li>Orientación sobre síntomas y cuidados.</li>
-          <li>Consejos para el manejo de enfermedades.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Telemedicina -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1200">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-camera-video"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Telemedicina</h3>
-        </a>
-        <p>Consultas médicas a través de videollamadas.</p>
-        <ul>
-          <li>Consulta médica remota.</li>
-          <li>Evaluaciones a distancia.</li>
-          <li>Asesoramiento y seguimiento.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Suturas de Heridas -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1300">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-scissors"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Suturas de Heridas</h3>
-        </a>
-        <p>Tratamiento para heridas que requieren sutura.</p>
-        <ul>
-          <li>Realización de suturas.</li>
-          <li>Cuidado postoperatorio.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-    <!-- Servicio de Lectura de Exámenes -->
-    <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="1400">
-      <div class="service-item position-relative">
-        <div class="icon">
-          <i class="bi bi-file-earmark-text"></i>
-        </div>
-        <a href="service-details.html" class="stretched-link">
-          <h3>Lectura de Exámenes</h3>
-        </a>
-        <p>Interpretación de resultados de exámenes médicos.</p>
-        <ul>
-          <li>Análisis de resultados de laboratorio.</li>
-          <li>Evaluación de estudios diagnósticos.</li>
-        </ul>
-      </div>
-    </div><!-- End Service Item -->
-
-  </div><!-- End Row -->
-
-</div><!-- End Container -->
-
-</section><!-- End Services Section -->
-
-
-<!-- Call To Action Section -->
-<section id="call-to-action" class="call-to-action section dark-background">
-
-  <img src="assets/img/domisalud logo.jpg" alt="">
-
-  <div class="container">
-    <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
-      <div class="col-xl-10">
-        <div class="text-center">
-          <h3>Contáctanos Ahora</h3>
-          <p>Obtén más información sobre nuestros servicios o programa una consulta con nuestros especialistas.</p>
-          <a class="cta-btn" href="#contact">Contáctanos</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</section><!-- /Call To Action Section -->
-
-<!-- Portfolio Section -->
-<section id="portfolio" class="portfolio section">
-
-
-</div><!-- Fin de Portfolio Container -->
-
-</div>
-
-</div>
-
-</section><!-- /Portfolio Section -->
-
-<!-- Stats Section -->
-<section id="stats" class="stats section">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="row gy-4 align-items-center justify-content-between">
-
-      <div class="col-lg-5">
-        <img src="assets/img/pic20.jpg" alt="" class="img-fluid">
-      </div>
-
-      <div class="col-lg-6">
-
-        <h3 class="fw-bold fs-2 mb-3">Servicio confiable y profesional</h3>
-        <p>
-          En Domisalud JAC, nos dedicamos a ofrecer servicios de salud en el hogar con el más alto estándar de calidad. Nuestro equipo está compuesto por profesionales experimentados y comprometidos con el bienestar de nuestros pacientes.
-        </p>
-
-        <div class="row gy-4">
-
-          <div class="col-lg-6">
-            <div class="stats-item d-flex">
-              <i class="bi bi-emoji-smile flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Clientes Satisfechos</strong> <span>con nuestro servicio</span></p>
-              </div>
-            </div>
-          </div><!-- Fin de Stats Item -->
-
-          <div class="col-lg-6">
-            <div class="stats-item d-flex">
-              <i class="bi bi-journal-richtext flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Proyectos Completados</strong> <span>con éxito</span></p>
-              </div>
-            </div>
-          </div><!-- Fin de Stats Item -->
-
-          <div class="col-lg-6">
-            <div class="stats-item d-flex">
-              <i class="bi bi-headset flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="2000" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Horas de Soporte</strong> <span>a nuestros pacientes</span></p>
-              </div>
-            </div>
-          </div><!-- Fin de Stats Item -->
-
-          <div class="col-lg-6">
-            <div class="stats-item d-flex">
-              <i class="bi bi-people flex-shrink-0"></i>
-              <div>
-                <span data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1" class="purecounter"></span>
-                <p><strong>Profesionales</strong> <span>dedicados en nuestro equipo</span></p>
-              </div>
-            </div>
-          </div><!-- Fin de Stats Item -->
+          <div class="stat">
+            <strong>WhatsApp</strong>
+            <span>Canal de solicitud y orientación</span>
+          </div>
 
         </div>
 
@@ -628,300 +4302,1181 @@
 
     </div>
 
-  </div>
+<!-- =========================
+     SERVICES PREMIUM
+========================= -->
 
-</section><!-- /Stats Section -->
-
-<!-- Testimonials Section -->
-<section id="testimonials" class="testimonials section dark-background">
-
-  <img src="assets/img/domisalud logo.jpg" class="testimonials-bg" alt="">
-
-  <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-    <div class="swiper init-swiper">
-      <script type="application/json" class="swiper-config">
-        {
-          "loop": true,
-          "speed": 600,
-          "autoplay": {
-            "delay": 5000
-          },
-          "slidesPerView": "auto",
-          "pagination": {
-            "el": ".swiper-pagination",
-            "type": "bullets",
-            "clickable": true
-          }
-        }
-      </script>
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Juan Garcia</h3>
-            <h4>Cliente</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>Gracias a Domisalud JAC, mi recuperación en casa fue mucho más fácil. El personal es muy atento y profesional.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- Fin de Testimonial item -->
-
-        <div class="swiper-slide">
-          <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>María González</h3>
-            <h4>Cliente</h4>
-            <div class="stars">
-              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-            </div>
-            <p>
-              <i class="bi bi-quote quote-icon-left"></i>
-              <span>El servicio de terapia respiratoria fue excelente. Los terapeutas son muy profesionales y amables.</span>
-              <i class="bi bi-quote quote-icon-right"></i>
-            </p>
-          </div>
-        </div><!-- Fin de Testimonial item -->
-
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-
-  </div>
-
-</section><!-- /Testimonials Section -->
-
-<!-- Team Section -->
-<section id="team" class="team section">
-
-
-</section><!-- /Team Section -->
-
-<!-- Contact Section -->
-<section id="contact" class="contact section-bg">
-
-  <!-- Section Title -->
-  <div class="container section-title" data-aos="fade-up">
-    <h2>Contacto</h2>
-    <p>Ponte en contacto con nosotros</p>
-  </div><!-- Fin de Section Title -->
+<section class="section services-section" id="servicios">
 
   <div class="container">
 
-    <div class="row gy-4">
+    <div class="section-heading center">
 
-      <div class="col-lg-4">
-        <div class="info-item d-flex">
-          <i class="bi bi-geo-alt flex-shrink-0"></i>
-          <div>
-            <h4>Dirección:</h4>
-            <p>Kra 78K N 40-22 Sur</p>
-          </div>
-        </div>
-      </div><!-- Fin de Info Item -->
+      <div class="section-kicker">
+        Servicios de salud
+      </div>
 
-      <div class="col-lg-4">
-        <div class="info-item d-flex">
-          <i class="bi bi-phone flex-shrink-0"></i>
-          <div>
-            <h4>Teléfono:</h4>
-            <p>3242181960 / 3027125931</p>
-          </div>
-        </div>
-      </div><!-- Fin de Info Item -->
+      <h2>
+        Atención pensada para facilitar tu cuidado.
+      </h2>
 
-      <div class="col-lg-4">
-        <div class="info-item d-flex">
-          <i class="bi bi-envelope flex-shrink-0"></i>
-          <div>
-            <h4>Email:</h4>
-            <p>gerencia.domisalud@gmail.com</p>
-          </div>
-        </div>
-      </div><!-- Fin de Info Item -->
+      <p>
+        Encuentra servicios de salud a domicilio en Bogotá y
+        consulta con nuestro equipo la disponibilidad para tu atención.
+      </p>
 
     </div>
 
-    <div class="row justify-content-center mt-4">
-      <div class="col-lg-8">
-        <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" required>
-            </div>
-            <div class="col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Tu Email" required>
-            </div>
+
+    <div class="services-grid">
+
+
+      <!-- =========================
+           MÉDICO A DOMICILIO
+      ========================= -->
+
+      <a href="medico-a-domicilio.html"
+         class="service-card service-card-medico"
+         aria-label="Médico a domicilio en Bogotá">
+
+        <div class="service-visual">
+
+          <div class="service-orb"></div>
+
+          <div class="service-icon">
+
+            <!-- MÉDICO -->
+            <svg viewBox="0 0 64 64"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+              <circle cx="32" cy="15" r="7"/>
+
+              <path d="M20 43
+                       C20 34 24 27 32 27
+                       C40 27 44 34 44 43"/>
+
+              <path d="M24 28
+                       L24 39
+                       L20 46"/>
+
+              <path d="M40 28
+                       L40 39
+                       L44 46"/>
+
+              <path d="M25 31
+                       C27 34 29 35 32 35
+                       C35 35 37 34 39 31"/>
+
+              <path d="M25 28
+                       L32 35
+                       L39 28"/>
+
+              <path d="M32 35
+                       L32 48"/>
+
+              <path d="M32 48
+                       C32 53 38 55 41 51
+                       C43 49 43 46 41 44"/>
+
+              <circle cx="41" cy="44" r="2"/>
+
+            </svg>
+
           </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto" required>
-          </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Mensaje" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Cargando</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Tu mensaje ha sido enviado. ¡Gracias!</div>
-          </div>
-          <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
-        </form>
-      </div><!-- Fin de Contact Form -->
 
-    </div>
-
-  </div>
-
-</section><!-- /Contact Section -->
-
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-$(document).ready(function() {
-    $("#contactForm").submit(function(event) {
-        event.preventDefault(); // Previene el envío del formulario
-
-        $.ajax({
-            type: "POST",
-            url: "simulate_contact.php", // Ruta al archivo PHP de simulación
-            data: $(this).serialize(), // Serializa los datos del formulario
-            dataType: "json",
-            beforeSend: function() {
-                $(".php-email-form .loading").show(); // Muestra el mensaje de carga
-                $(".php-email-form .error-message").hide(); // Oculta el mensaje de error
-                $(".php-email-form .sent-message").hide(); // Oculta el mensaje de éxito
-            },
-            success: function(response) {
-                $(".php-email-form .loading").hide(); // Oculta el mensaje de carga
-                if (response.status === 'success') {
-                    $(".php-email-form .sent-message").text(response.message).show(); // Muestra el mensaje de éxito
-                } else {
-                    $(".php-email-form .error-message").text(response.message).show(); // Muestra el mensaje de error
-                }
-            },
-
-        });
-    });
-});
-</script>
+        </div>
 
 
-<!-- Footer -->
-<footer id="footer" class="footer">
+        <div class="service-content">
 
-  <div class="container">
+          <h3>
+            Médico a domicilio
+          </h3>
 
-    <div class="row gy-3">
-
-      <div class="col-lg-3 col-md-6 d-flex">
-        <i class="bi bi-geo-alt icon"></i>
-        <div>
-          <h4>Dirección</h4>
           <p>
-            Kra 78K N 40-22 Sur <br>
+            Consulta médica profesional en la comodidad de tu hogar,
+            con valoración y orientación según tus necesidades.
           </p>
+
+          <span class="service-link">
+            Ver servicio
+            <span aria-hidden="true">→</span>
+          </span>
+
         </div>
 
-      </div>
+      </a>
 
-      <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Enlaces útiles</h4>
-        <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Inicio</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Servicios</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Contacto</a></li>
-        </ul>
-      </div>
 
-      <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Nuestros Servicios</h4>
-        <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Enfermería</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Terapia Respiratoria</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Fisioterapia</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Terapia Ocupacional</a></li>
-        </ul>
-      </div>
 
-      <div class="col-lg-3 col-md-6 footer-contact">
-        <h4>Contáctanos</h4>
-        <p>
-          Kra 78K N 40-22 Sur <br>
-          <strong>Teléfono:</strong> 3242181960 / 3027125931<br>
-          <strong>Email:</strong> gerencia.domisalud@gmail.com<br>
-        </p>
-      </div>
+      <!-- =========================
+           TERAPIAS
+      ========================= -->
+
+      <a href="terapias.html"
+         class="service-card service-card-terapias">
+
+        <div class="service-visual">
+
+          <div class="service-orb"></div>
+
+          <div class="service-icon">
+
+            <!-- TERAPIAS -->
+            <svg viewBox="0 0 64 64"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+              <circle cx="40" cy="13" r="5"/>
+
+              <path d="M35 20
+                       C31 23 28 27 27 32"/>
+
+              <path d="M35 21
+                       L42 29
+                       L49 24"/>
+
+              <path d="M27 32
+                       L20 41
+                       L14 50"/>
+
+              <path d="M27 32
+                       L36 40
+                       L45 49"/>
+
+              <path d="M14 50
+                       L9 50"/>
+
+              <path d="M45 49
+                       L52 49"/>
+
+              <path d="M12 25
+                       C20 21 25 21 31 24"/>
+
+              <path d="M12 25
+                       L9 22"/>
+
+              <path d="M12 25
+                       L9 28"/>
+
+              <path d="M20 41
+                       L18 31"/>
+
+            </svg>
+
+          </div>
+
+        </div>
+
+
+        <div class="service-content">
+
+          <h3>
+            Terapias
+          </h3>
+
+          <p>
+            Terapias a domicilio enfocadas en recuperación,
+            movilidad y bienestar integral.
+          </p>
+
+          <span class="service-link">
+            Ver servicio
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
+
+
+      <!-- =========================
+           PROCEDIMIENTOS
+      ========================= -->
+
+      <a href="procedimientos.html"
+         class="service-card service-card-procedimientos">
+
+        <div class="service-visual">
+
+          <div class="service-orb"></div>
+
+          <div class="service-icon">
+
+            <!-- PROCEDIMIENTOS -->
+            <svg viewBox="0 0 64 64"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+              <path d="M18 46
+                       L43 21"/>
+
+              <rect x="25" y="18"
+                    width="13"
+                    height="28"
+                    rx="2"
+                    transform="rotate(45 31.5 32)"/>
+
+              <path d="M39 17
+                       L47 25"/>
+
+              <path d="M43 13
+                       L51 21"/>
+
+              <path d="M47 9
+                       L55 17"/>
+
+              <path d="M18 46
+                       L13 51"/>
+
+              <path d="M10 54
+                       L16 48"/>
+
+              <path d="M29 24
+                       L40 35"/>
+
+              <path d="M24 29
+                       L35 40"/>
+
+              <path d="M19 34
+                       L30 45"/>
+
+              <path d="M50 22
+                       L55 27"/>
+
+            </svg>
+
+          </div>
+
+        </div>
+
+
+        <div class="service-content">
+
+          <h3>
+            Procedimientos
+          </h3>
+
+          <p>
+            Procedimientos de salud realizados por personal capacitado
+            y de acuerdo con las necesidades de cada paciente.
+          </p>
+
+          <span class="service-link">
+            Ver servicio
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
+
+
+      <!-- =========================
+           LABORATORIO
+      ========================= -->
+
+      <a href="laboratorio.html"
+         class="service-card service-card-laboratorio">
+
+        <div class="service-visual">
+
+          <div class="service-orb"></div>
+
+          <div class="service-icon">
+
+            <!-- LABORATORIO -->
+            <svg viewBox="0 0 64 64"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+              <path d="M20 12
+                       L20 42
+                       C20 49 24 53 30 53
+                       C36 53 40 49 40 42
+                       L40 12"/>
+
+              <path d="M17 12
+                       L43 12"/>
+
+              <path d="M20 34
+                       C25 32 29 38 34 35
+                       C37 33 39 34 40 35"/>
+
+              <path d="M44 18
+                       L44 43
+                       C44 47 47 50 51 50
+                       C55 50 58 47 58 43
+                       L58 18"/>
+
+              <path d="M42 18
+                       L60 18"/>
+
+              <path d="M44 37
+                       C48 35 51 39 55 37
+                       C56 36 57 36 58 37"/>
+
+            </svg>
+
+          </div>
+
+        </div>
+
+
+        <div class="service-content">
+
+          <h3>
+            Laboratorio
+          </h3>
+
+          <p>
+            Toma de muestras y servicios de laboratorio a domicilio,
+            de forma cómoda y segura.
+          </p>
+
+          <span class="service-link">
+            Ver servicio
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
+
+
+      <!-- =========================
+           ELECTROCARDIOGRAMA
+      ========================= -->
+
+      <a href="electrocardiograma.html"
+         class="service-card service-card-electrocardiograma">
+
+        <div class="service-visual">
+
+          <div class="service-orb"></div>
+
+          <div class="service-icon">
+
+            <!-- ELECTROCARDIOGRAMA -->
+            <svg viewBox="0 0 64 64"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+              <path d="M32 50
+                       C29 47 13 37 13 25
+                       C13 18 18 14 24 14
+                       C28 14 31 16 32 20
+                       C33 16 36 14 40 14
+                       C46 14 51 18 51 25
+                       C51 37 35 47 32 50Z"/>
+
+              <path d="M9 32
+                       L20 32
+                       L24 26
+                       L28 39
+                       L33 21
+                       L37 36
+                       L41 32
+                       L55 32"/>
+
+            </svg>
+
+          </div>
+
+        </div>
+
+
+        <div class="service-content">
+
+          <h3>
+            Electrocardiograma
+          </h3>
+
+          <p>
+            Evaluación de la actividad eléctrica del corazón
+            mediante electrocardiograma a domicilio.
+          </p>
+
+          <span class="service-link">
+            Ver servicio
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
+
+
+      <!-- =========================
+           ECOGRAFÍAS
+      ========================= -->
+
+      <a href="ecografias.html"
+         class="service-card service-card-ecografias">
+
+        <div class="service-visual">
+
+          <div class="service-orb"></div>
+
+          <div class="service-icon">
+
+            <!-- ECOGRAFÍAS -->
+            <svg viewBox="0 0 64 64"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+              <rect x="10"
+                    y="10"
+                    width="31"
+                    height="25"
+                    rx="3"/>
+
+              <path d="M20 42
+                       L31 35
+                       L37 42"/>
+
+              <path d="M16 47
+                       L38 47"/>
+
+              <path d="M15 27
+                       C19 22 22 24 25 20
+                       C28 17 32 21 36 16"/>
+
+              <path d="M44 31
+                       L51 24
+                       L57 30
+                       L50 37
+                       C47 40 43 38 42 35
+                       C41 33 42 32 44 31Z"/>
+
+              <path d="M50 37
+                       L44 45"/>
+
+              <path d="M49 18
+                       C54 19 58 22 60 26"/>
+
+              <path d="M52 13
+                       C58 14 62 18 64 22"/>
+
+            </svg>
+
+          </div>
+
+        </div>
+
+
+        <div class="service-content">
+
+          <h3>
+            Ecografías
+          </h3>
+
+          <p>
+            Estudios de imagen realizados a domicilio para apoyar
+            la valoración y seguimiento de tu salud.
+          </p>
+
+          <span class="service-link">
+            Ver servicio
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
+
+
+      <!-- =========================
+           WHATSAPP
+      ========================= -->
+
+      <a href="https://wa.me/573115081075?text=Hola%20CAPSALUD,%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios%20de%20salud%20a%20domicilio"
+         target="_blank"
+         rel="noopener"
+         class="service-card service-card-whatsapp">
+
+        <div class="service-visual">
+
+          <div class="service-orb"></div>
+
+          <div class="service-icon">
+
+            <!-- WHATSAPP -->
+            <svg viewBox="0 0 64 64"
+                 xmlns="http://www.w3.org/2000/svg"
+                 fill="none"
+                 stroke="currentColor"
+                 stroke-linecap="round"
+                 stroke-linejoin="round">
+
+              <path d="M32 10
+                       C20 10 11 18 11 29
+                       C11 35 14 40 19 44
+                       L17 53
+                       L26 48
+                       C28 49 30 49 32 49
+                       C44 49 53 41 53 29
+                       C53 18 44 10 32 10Z"/>
+
+              <path d="M24 22
+                       C22 24 22 27 24 31
+                       C26 36 30 40 35 42
+                       C38 43 41 42 42 40
+                       L44 37
+                       C45 36 44 34 43 34
+                       L38 32
+                       C37 32 36 32 35 33
+                       L33 35
+                       C30 34 28 32 27 29
+                       L29 27
+                       C30 26 30 25 29 24
+                       L27 21
+                       C26 20 25 21 24 22Z"/>
+
+            </svg>
+
+          </div>
+
+        </div>
+
+
+        <div class="service-content">
+
+          <h3>
+            Solicitud por WhatsApp
+          </h3>
+
+          <p>
+            Comunícate directamente con nuestro equipo y solicita
+            información sobre nuestros servicios de salud.
+          </p>
+
+          <span class="service-link">
+            Ver servicio
+            <span aria-hidden="true">→</span>
+          </span>
+
+        </div>
+
+      </a>
+
 
     </div>
 
   </div>
 
-</footer><!-- /Footer -->
-<!-- Footer -->
-<footer class="footer-social">
-  <div class="container text-center">
-    <a href="https://www.facebook.com/Domisalud-CapsaludSAS" target="_blank" class="social-icon">
-      <i class="bi bi-facebook"></i>
-    </a>
-    <a href="https://www.instagram.com/capsaludsas" target="_blank" class="social-icon">
-      <i class="bi bi-instagram"></i>
-    </a>
-    <a href="https://wa.me/573242181960" target="_blank" class="social-icon">
-      <i class="bi bi-whatsapp"></i>
-    </a>
-  </div>
-</footer>
+</section>
 
-<style>
-  .footer-social {
-    background-color: #f8f9fa;
-    padding: 20px 0;
-  }
+    <!-- =========================
+         NOSOTROS
+    ========================= -->
 
-  .footer-social .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-  }
+    <section class="section section-soft" id="nosotros">
 
-  .footer-social .social-icon {
-    color: #333;
-    font-size: 30px;
-    transition: color 0.3s;
-  }
+      <div class="container why-grid">
 
-  .footer-social .social-icon:hover {
-    color: #007bff;
-    text-decoration: none;
-  }
-</style>
+        <div class="why-visual">
+
+          <div class="floating-card one">
+            <strong>CAPSALUD</strong>
+            <span>Su Médico en Casa</span>
+          </div>
+
+          <div class="medical-symbol">
+            <img src="assets/img/pic10.jpg" alt="Médico a domicilio">
+          </div>
+
+          <div class="floating-card two">
+            <strong>Atención en casa</strong>
+            <span>Bogotá</span>
+          </div>
+
+        </div>
 
 
-  <!-- Scroll Top -->
-  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+        <div>
 
-  <!-- Preloader -->
-  <div id="preloader"></div>
+          <div class="section-heading">
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+            <div class="section-kicker">
+              Sobre CAPSALUD
+            </div>
 
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>
+            <h2>
+              Cuidamos la experiencia de recibir atención en casa.
+            </h2>
+
+            <p>
+              CAPSALUD nace con el propósito de acercar servicios de salud
+              a las personas y sus familias, facilitando el acceso a la
+              atención desde la comodidad de su hogar.
+            </p>
+
+          </div>
+
+
+          <div class="why-list">
+
+            <div class="why-item">
+
+              <div class="why-check">✓</div>
+
+              <div>
+                <h3>Atención centrada en el paciente</h3>
+                <p>
+                  Buscamos que cada solicitud sea orientada de manera
+                  clara y humana.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+              <div class="why-check">✓</div>
+
+              <div>
+                <h3>Servicios en el domicilio</h3>
+                <p>
+                  Acercamos diferentes alternativas de atención de salud
+                  directamente al hogar.
+                </p>
+              </div>
+
+            </div>
+
+
+            <div class="why-item">
+
+              <div class="why-check">✓</div>
+
+              <div>
+                <h3>Orientación por canales digitales</h3>
+                <p>
+                  Puedes comunicarte con nuestro equipo y consultar
+                  disponibilidad de servicios.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         COBERTURA
+    ========================= -->
+
+    <section class="section coverage" id="cobertura">
+
+      <div class="container coverage-grid">
+
+        <div>
+
+          <div class="section-kicker">
+            Cobertura
+          </div>
+
+          <h2>
+            Servicios de salud a domicilio en Bogotá.
+          </h2>
+
+          <p>
+            Nuestra atención está enfocada en Bogotá. La disponibilidad
+            puede variar según el servicio, ubicación y condiciones de
+            atención.
+          </p>
+
+          <div style="margin-top:28px;">
+
+            <a class="btn btn-primary"
+               href="https://wa.me/573115081075?text=Hola%20CAPSALUD%2C%20quiero%20consultar%20la%20disponibilidad%20de%20un%20servicio."
+               target="_blank"
+               rel="noopener">
+
+              Consultar cobertura
+
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="coverage-box">
+
+          <div class="coverage-box-title">
+            Consulta con nuestro equipo
+          </div>
+
+          <div class="coverage-row">
+
+            <div class="coverage-row-icon">01</div>
+
+            <div>
+              <strong>Indica tu ubicación</strong>
+              <span>Ciudad y zona de atención</span>
+            </div>
+
+          </div>
+
+          <div class="coverage-row">
+
+            <div class="coverage-row-icon">02</div>
+
+            <div>
+              <strong>Cuéntanos qué necesitas</strong>
+              <span>Servicio solicitado</span>
+            </div>
+
+          </div>
+
+          <div class="coverage-row">
+
+            <div class="coverage-row-icon">03</div>
+
+            <div>
+              <strong>Recibe orientación</strong>
+              <span>Información sobre disponibilidad</span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================
+         CONTACTO
+    ========================= -->
+
+    <section class="section" id="contacto">
+
+      <div class="container">
+
+        <div class="section-heading center">
+
+          <div class="section-kicker">
+            Contacto
+          </div>
+
+          <h2>
+            Estamos aquí para orientarte.
+          </h2>
+
+          <p>
+            Comunícate con CAPSALUD para solicitar información sobre
+            nuestros servicios de salud.
+          </p>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+
+          <div class="contact-info">
+
+            <h2>
+              Su Médico en Casa.
+            </h2>
+
+            <p>
+              Atención y servicios de salud en Bogotá.
+            </p>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">
+                <svg width="18" height="18"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+                  <path d="M12 21s7-6 7-12a7 7 0 1 0-14 0c0 6 7 12 7 12Z"/>
+                  <circle cx="12" cy="9" r="2.5"/>
+                </svg>
+              </div>
+
+              <div>
+                <small>Dirección</small>
+                <strong>Calle 83 # 19-36, Bogotá</strong>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">
+                <svg width="18" height="18"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2
+                           A19.8 19.8 0 0 1 3.1 5.2
+                           2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7
+                           c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L9 11
+                           a16 16 0 0 0 4 4l1.3-1.3
+                           a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7
+                           A2 2 0 0 1 22 16.9Z"/>
+                </svg>
+              </div>
+
+              <div>
+                <small>Teléfono / WhatsApp</small>
+                <strong>302 712 5931</strong>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">
+                <svg width="18" height="18"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     stroke="currentColor"
+                     stroke-width="2">
+                  <rect x="3" y="5" width="18" height="14" rx="2"/>
+                  <path d="m3 7 9 6 9-6"/>
+                </svg>
+              </div>
+
+              <div>
+                <small>Correo electrónico</small>
+                <strong>capsaludsas@gmail.com</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-card">
+
+            <h3>
+              ¿Qué servicio necesitas?
+            </h3>
+
+            <p>
+              Selecciona un canal para comunicarte con nosotros.
+            </p>
+
+
+            <div class="contact-options">
+
+              <a class="contact-option"
+                 href="https://wa.me/573115081075?text=Hola%20CAPSALUD%2C%20quiero%20solicitar%20una%20consulta%20m%C3%A9dica%20a%20domicilio."
+                 target="_blank"
+                 rel="noopener">
+
+                <div class="contact-option-left">
+
+                  <div class="contact-option-icon">
+                    <svg width="20" height="20"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+                      <path d="M21 11.5a8.4 8.4 0 0 1-9 8.5
+                               8.8 8.8 0 0 1-4.1-1L3 20l1.2-4.5
+                               A8.3 8.3 0 0 1 3.5 11.5
+                               a8.5 8.5 0 1 1 17.5 0Z"/>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <strong>WhatsApp</strong>
+                    <span>Solicitar información</span>
+                  </div>
+
+                </div>
+
+                <span class="arrow">→</span>
+
+              </a>
+
+
+              <a class="contact-option"
+                 href="tel:+573115081075">
+
+                <div class="contact-option-left">
+
+                  <div class="contact-option-icon">
+                    <svg width="20" height="20"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+                      <path d="M22 16.9v3a2 2 0 0 1-2.2 2
+                               A19.8 19.8 0 0 1 3.1 5.2
+                               2 2 0 0 1 5.1 3h3a2 2 0 0 1 2 1.7
+                               c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L9 11
+                               a16 16 0 0 0 4 4l1.3-1.3
+                               a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7
+                               A2 2 0 0 1 22 16.9Z"/>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <strong>Llamar</strong>
+                    <span>302 712 5931</span>
+                  </div>
+
+                </div>
+
+                <span class="arrow">→</span>
+
+              </a>
+
+
+              <a class="contact-option"
+                 href="mailto:capsaludsas@gmail.com">
+
+                <div class="contact-option-left">
+
+                  <div class="contact-option-icon">
+                    <svg width="20" height="20"
+                         viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+                      <rect x="3" y="5" width="18" height="14" rx="2"/>
+                      <path d="m3 7 9 6 9-6"/>
+                    </svg>
+                  </div>
+
+                  <div>
+                    <strong>Correo electrónico</strong>
+                    <span>capsaludsas@gmail.com</span>
+                  </div>
+
+                </div>
+
+                <span class="arrow">→</span>
+
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =========================
+       FOOTER
+  ========================= -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div>
+
+          <div class="footer-brand">
+
+            <div class="brand-icon">
+              <svg viewBox="0 0 64 64"
+                   fill="none"
+                   xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 30L32 11L54 30V54H10V30Z"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linejoin="round"/>
+                <path d="M32 31V50"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"/>
+                <path d="M23 40H41"
+                      stroke="white"
+                      stroke-width="5"
+                      stroke-linecap="round"/>
+              </svg>
+            </div>
+
+            <div>
+              <strong>CAPSALUD</strong>
+              <span>Su Médico en Casa</span>
+            </div>
+
+          </div>
+
+          <p class="footer-about">
+            Servicios de salud y atención domiciliaria en Bogotá,
+            orientados a facilitar el acceso al cuidado de la salud.
+          </p>
+
+        </div>
+
+
+        <div>
+
+          <h4>Explorar</h4>
+
+          <div class="footer-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#cobertura">Cobertura</a>
+            <a href="#contacto">Contacto</a>
+          </div>
+
+        </div>
+
+
+        <div>
+
+          <h4>Contacto</h4>
+
+          <div class="footer-links">
+            <a href="tel:+573115081075">
+              302 712 5931
+            </a>
+
+            <a href="mailto:capsaludsas@gmail.com">
+              capsaludsas@gmail.com
+            </a>
+
+            <a href="#contacto">
+              Calle 83 # 19-36, Bogotá
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+
+        <span>
+          © <span id="year"></span> CAPSALUD. Todos los derechos reservados.
+        </span>
+
+        <span>
+          Su Médico en Casa · Bogotá, Colombia
+        </span>
+
+      </div>
+
+    </div>
+
+  </footer>
+
+
+  <!-- =========================
+       FLOATING WHATSAPP
+  ========================= -->
+
+  <a class="floating-whatsapp"
+     href="https://wa.me/573115081075?text=Hola%20CAPSALUD%2C%20quiero%20informaci%C3%B3n%20sobre%20sus%20servicios."
+     target="_blank"
+     rel="noopener"
+     aria-label="Contactar a CAPSALUD por WhatsApp">
+
+    <svg viewBox="0 0 24 24"
+         fill="none"
+         stroke="currentColor"
+         stroke-width="2">
+
+      <path d="M21 11.5a8.4 8.4 0 0 1-9 8.5
+               8.8 8.8 0 0 1-4.1-1L3 20l1.2-4.5
+               A8.3 8.3 0 0 1 3.5 11.5
+               a8.5 8.5 0 1 1 17.5 0Z"/>
+
+      <path d="M8.5 9.5c.3 2 2 4 4 5"/>
+
+    </svg>
+
+  </a>
+
+
+  <!-- =========================
+       JAVASCRIPT
+  ========================= -->
+
+  <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const nav = document.getElementById("nav");
+
+    menuBtn.addEventListener("click", () => {
+
+      nav.classList.toggle("active");
+
+      const expanded =
+        menuBtn.getAttribute("aria-expanded") === "true";
+
+      menuBtn.setAttribute(
+        "aria-expanded",
+        String(!expanded)
+      );
+
+    });
+
+
+    document.querySelectorAll(".nav a").forEach(link => {
+
+      link.addEventListener("click", () => {
+
+        nav.classList.remove("active");
+        menuBtn.setAttribute("aria-expanded", "false");
+
+      });
+
+    });
+
+
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+
+  </script>
 
 </body>
-
 </html>
